@@ -119,10 +119,9 @@
         </div>
         <div class="who_we_are">
             <div class="container">
-                <div class="row">
+                <div class="row col-xs-12">
                     <div class="col-sm-6" data-aos="fade-left">
                         <h2>Who We Are?</h2>
-                        <br>
                         <br>
                         <p>Right Physio is an independent Physiotherapy company
                             specialising in providing expert home care physiotherapy
@@ -290,6 +289,10 @@
             AOS.init({
                 duration: 1500,
                 delay: 80
+            });
+            AOS.init({
+                disable: 'mobile',
+                disable: 'tablet',
             });
         });
     </script>

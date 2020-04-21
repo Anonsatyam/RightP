@@ -191,7 +191,9 @@ nav {
     width: 30px;
     display: block; }
   .phone_book p a {
-    font-size: 12px; }
+    font-size: 12px;
+    background-color: #311B92;
+    color: white; }
   .phone_book p button {
     font-size: 12px; }
   nav {
@@ -274,6 +276,58 @@ nav {
     background-image: none !important; }
   .phone_book p {
     text-align: center; }
+  .col-xs-12 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0 !important; }
+  #about_head h1 {
+    font-size: 34px;
+    margin-top: 20px; }
+  .who_we_are h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px; }
+  .who_we_are .col-sm-6 img {
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .who_we_are .col-sm-6 p {
+    font-size: 16px !important; }
+  .physio_at_home .col-sm-6 img {
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: left; }
+  .physio_at_home .col-sm-6 h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 30px; }
+  .physio_at_home .col-sm-6 p {
+    font-size: 16px !important;
+    text-align: left; }
+  .our_vision {
+    margin-bottom: 0; }
+    .our_vision h1 {
+      font-size: 34px;
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 20px; }
+    .our_vision .col-sm-4 .card {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 30px; }
+      .our_vision .col-sm-4 .card img {
+        height: 300;
+        width: 300; }
+    .our_vision .col-sm-4 .card-body p {
+      font-size: 14px; }
   .footer .col-sm-3 {
     margin-top: 10 !important; }
   .footer h3 {

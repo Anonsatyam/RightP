@@ -12,6 +12,9 @@
 /* Contact Form Code Ends Here */
 /* Responsive Code For Mobile Starts From Here */
 /* Responsive Code For Mobile Ends Here */
+$color-green: #009345;
+$color-blue: #311B92;
+
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -44,6 +47,7 @@ html {
             list-style-type: none;
             text-decoration: none;
             background-color: white;
+            color: $color-blue;
             padding: 10px 12px;
             border-radius: 12px;
             font-size: 14px;
@@ -645,6 +649,7 @@ nav {
 
     .phone_book p a {
         font-size: 12px;
+        
     }
 
     .phone_book p button {
