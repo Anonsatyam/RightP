@@ -467,3 +467,28 @@ nav {
     text-align: center; }
   .footer .col-sm-8 p {
     text-align: center; } }
+
+#job-opening .card {
+  display: none; }
+
+a#loadMore {
+  text-decoration: none;
+  width: 250px;
+  text-align: center;
+  border: none;
+  color: #009345;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 0.7rem 1rem;
+  transition: transform .1s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  cursor: pointer; }

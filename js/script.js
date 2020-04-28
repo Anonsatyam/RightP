@@ -16,3 +16,14 @@ jQuery(function ($) {
         });
     });
 });
+
+$(document).ready(function () {
+    $('#job-opening .card').slice(0, 3).show();
+    $('#loadMore').click(function (e) {
+        $('#job-opening .card:hidden').slice(0, 3).slideDown();
+        e.preventDefault()
+        if ($('#job-opening .card:hidden').length == 0) {
+            $('#loadMore').fadeOut(1000);
+        }
+    });
+});
