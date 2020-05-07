@@ -5,15 +5,24 @@ jQuery(function ($) {
         $('nav ul li').hover(function (e) {
             $(this).children('ul').stop(true, false, true).fadeToggle(300);
         });
-        $('html').click(function () {
-            $('.nav-dropdown').hide();
-        });
+        // $('#nav-toggle').click(function () {
+        //     $('ul.nav-dropdown').hide();
+        //     $('ul.nav-dropdown').show();
+            
+        // });
         $('#nav-toggle').on('click', function () {
             this.classList.toggle('active');
         });
         $('#nav-toggle').click(function () {
             $('nav ul').toggle();
         });
+        $('#nav-toggle').click(function () {
+            e.preventDefault();
+            $('ul.nav-dropdown').toggle();
+        });
+        // $('#nav-toggle').click(function () {
+        //     $('.nav-dropdown').toggle();
+        // });
     });
 });
 
