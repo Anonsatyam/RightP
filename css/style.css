@@ -192,16 +192,17 @@ nav ul li ul li a {
 
 #book-online button:hover {
   background: white;
-  border: 1px solid #009345;
+  border: 2px solid #009345;
 }
 
-#book-online a:hover {
+#book-online button:hover a {
   color: #009345;
 }
 
 #doc_img img {
   float: right;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  height: 400px
 }
 
 .green-box {
@@ -262,6 +263,7 @@ nav ul li ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #333333;
+  text-align: justify;
 }
 
 .how-works .card {
@@ -270,7 +272,7 @@ nav ul li ul li a {
 }
 
 .how-works .card:hover {
-  transform: scale(1.1);
+  transform: scale(0.99);
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
@@ -344,13 +346,13 @@ nav ul li ul li a {
   border-radius: 15px;
 }
 
-.flip-container:hover .flipper {
+/* .flip-container:hover .flipper {
   -webkit-transform: rotateY(180deg);
 }
 
 .flip-container.hover .flipper {
   -webkit-transform: rotateY(180deg);
-}
+} */
 
 .front {
   width: 320px;
@@ -435,13 +437,15 @@ nav ul li ul li a {
   color: black;
 }
 
-.book-appoinment button {
+.book-appoinment .button button {
   border: none;
   color: #fff;
   text-transform: uppercase;
   width: 200px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   clear: both;
   border-radius: 50px;
   background-color: #009345;
@@ -450,74 +454,86 @@ nav ul li ul li a {
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-.book-appoinment button:hover {
-  transform: scale(0.9);
+.book-appoinment .button:hover {
+  transform: scale(1.1);
 }
 
-.book-appoinment button a {
-  font-size: 20px;
+.book-appoinment .button a {
+  font-size: 16px;
   text-decoration: none;
 }
 
-#contact {
-  padding: 25px;
-}
+/* #form {
+  padding: 25px 0;
+} */
 
-#contact input[type="text"] {
+#form input[type="text"] {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  border: 1px solid #ccc;
   background: #FFF;
-  margin: 20px 0 20px 0;
-  padding: 15px 30px;
-  border-radius: 50px;
+  padding: 0 35px 0;
+  height: 45px;
+  font-weight: 100;
+  font-size: 13px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #eff0f1;
+  margin-bottom: 10px;
 }
 
-#contact input[type="text"]:hover {
+#form input[type="text"]:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact input[type="email"] {
+#form input[type="email"] {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  border: 1px solid #ccc;
   background: #FFF;
-  margin: 20px 0 20px 0;
-  padding: 15px 30px;
-  border-radius: 50px;
+  padding: 0 35px 0;
+  height: 45px;
+  font-weight: 100;
+  font-size: 13px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #eff0f1;
+  margin-bottom: 10px;
 }
 
-#contact input[type="email"]:hover {
+#form input[type="email"]:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact input[type="tel"] {
+#form input[type="tel"] {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  border: 1px solid #ccc;
   background: #FFF;
-  margin: 20px 0 20px 0;
-  padding: 15px 30px;
-  border-radius: 50px;
+  padding: 0 35px 0;
+  height: 45px;
+  font-weight: 100;
+  font-size: 13px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #eff0f1;
+  margin-bottom: 10px;
 }
 
-#contact input[type="tel"]:hover:hover {
+#form input[type="tel"]:hover:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact button[type="submit"] {
+#form button[type="submit"] {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
@@ -530,18 +546,18 @@ nav ul li ul li a {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#form button[type="submit"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#form button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-#contact input:focus {
+#form input:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
@@ -910,4 +926,74 @@ nav ul li ul li a {
     margin-left: auto;
     border-right: none;
   }
+}
+
+/* Scroll To Top Button */
+
+#button {
+  display: inline-block;
+  background-color: #009345;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  /* line-height: 50px; */
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #311B92;
+}
+
+#button:active {
+  background-color: #311B92;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+fieldset .fa {
+  float: left;
+  margin-left: 10px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  color: #009345;
+}
+.modal-body,
+.modal-title{
+  color: #181818;
+}
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
+}
+.swal-button-container {
+  margin: 5px;
+  display: block !important;
+  position: relative;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 150px !important;
+}
+.swal-button{
+  width: 150px;
 }

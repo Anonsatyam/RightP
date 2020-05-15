@@ -632,10 +632,12 @@ nav ul li ul li a {
   #job-opening .card .card-body p button a {
     font-size: 14px;
   }
-  #job-opening .card{
+
+  #job-opening .card {
     height: 200px;
   }
-  .card{
+
+  .card {
     padding: 36px 26px;
   }
 
@@ -690,4 +692,47 @@ a#loadMore {
   -moz-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   cursor: pointer;
+}
+
+/* Scroll To Top Button */
+
+#button {
+  display: inline-block;
+  background-color: #009345;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  /* line-height: 50px; */
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #311B92;
+}
+
+#button:active {
+  background-color: #311B92;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

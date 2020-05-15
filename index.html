@@ -20,6 +20,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+
+        .mapboxgl-canvas {
+            position: relative !important;
+            height: 250px !important;
+        }
+
+        .mapboxgl-ctrl-attrib-inner a {
+            font-size: 16px !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -29,8 +48,8 @@
         <div class="phone_book_button">
             <div class="col-sm-8"></div>
             <div class="col-sm-4 phone_book">
-                <p><a href="" type="tel"><i class="fa fa-phone fa-phone animated-hover" aria-hidden="true"></i> +91
-                        9076319176</a><span><button>Book Online</button></span></p>
+                <!-- <p><a href="" type="tel"><i class="fa fa-phone fa-phone animated-hover" aria-hidden="true"></i> +91
+                        9076319176</a><span><button>Book Online</button></span></p> -->
             </div>
         </div>
         <!-- Phone Number & Book Button Above Navbar Ends Here -->
@@ -56,7 +75,7 @@
                                             <a href="physiotherapy.html" target="_blank">
                                                 Physiotherapy</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="page2.html"> Service 2</a>
                                         </li>
                                         <li>
@@ -65,7 +84,7 @@
                                         </li>
                                         <li>
                                             <a href="page4.html">
-                                               Service 4</a>
+                                                Service 4</a>
                                         </li>
                                         <li>
                                             <a href="page5.html">
@@ -78,18 +97,19 @@
                                         <li>
                                             <a href="page7.html">
                                                 Service 7</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="about.html">About Us</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#!">Solutions</a>
                                 </li>
                                 <li>
                                     <a href="#!">Blog</a>
-                                </li>
+                                </li> -->
+                                <li><a href="contact.html">Contact</a></li>
                                 <li>
                                     <a href="careers.html">Career</a>
                                 </li>
@@ -105,23 +125,23 @@
         <!-- Doctor Image, Text & Buttons In head part codes start from here -->
         <div class="container" id="mr_doc">
             <div class="row col-xs-12" style="margin-top: 100px;">
-                <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
-                    <h1>Home Physiotherapy <br>
+                <div class="col-sm-6">
+                    <h1 class="anim1">Home Physiotherapy <br>
                         Experts</h1>
-                    <h4>In-home physiotherapy care <br> Call us 7 days/week </h4>
-                    <div class="row main-button">
-                        <div class="col-sm-3">
+                    <h4 class="anim1">In-home physiotherapy care <br> Call us 7 days/week </h4>
+                    <div class="row main-button anim1" class="">
+                        <!-- <div class="col-sm-3">
                             <button style="background-color: #311B92;"><a href="#"><i class="fa fa-phone"
                                         aria-hidden="true"></i> +91 9076319176</a></button>
                         </div>
-                        <br>
+                        <br> -->
                         <div class="col-sm-3" id="book-online">
                             <button><a href="#">Book Online</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6" id="doc_img" data-aos="fade-down" data-aos-duration="1000">
-                    <img class="" src="./images/banner/physio_boy-min.png" height="300" alt="">
+                <div class="col-sm-6" id="doc_img">
+                    <img class="" src="./images/banner/physio_boy-min.png" alt="">
                 </div>
             </div>
         </div>
@@ -149,14 +169,14 @@
     <!-- How it works container code starts from here -->
     <div class="container how-works">
         <h2>How It Works</h2>
-        <div class="row">
-            <div class="col-sm-4 card" data-aos="zoom-in-down" data-aos-duration="1000">
+        <div class="row outer">
+            <div class="col-sm-4 card inner" data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="./images/how-it-works/tell-us-abt-injury-min.png" alt="Card image cap" height="200"
                     width="200">
                 <div class="card-body">
                     <h3>Tell Us About Your Injury</h3>
-                    <p>Our physiotherapist will take your details and arrange for one of our diagnosticians to 
-                        call you and arrange a telephone appointment where he or she will arrange a home visit 
+                    <p>Our physiotherapist will take your details and arrange for one of our diagnosticians to
+                        call you and arrange a telephone appointment where he or she will arrange a home visit
                         to examine you and suggest a plan of treatment if required.</p>
                 </div>
             </div>
@@ -164,7 +184,7 @@
                 <img src="./images/how-it-works/find-physio-min.png" alt="Card image cap" height="200" width="200">
                 <div class="card-body">
                     <h3>We Will find a Physiotherapist match</h3>
-                    <p>After that first visit the diagnostician will select the therapist whose skills best 
+                    <p>After that first visit the diagnostician will select the therapist whose skills best
                         match your requirements and any personal preferences you may have.
                         We may offer you a choice if we have more than one who we consider appropriate.</p>
                 </div>
@@ -174,7 +194,7 @@
                     width="200">
                 <div class="card-body">
                     <h3>A Physiotherapist Come To You.</h3>
-                    <p>If you are content with our choice, we will send you an agreement to sign and then the 
+                    <p>If you are content with our choice, we will send you an agreement to sign and then the
                         therapist will call you to arrange the first session. In your own home.</p>
                 </div>
             </div>
@@ -190,27 +210,28 @@
                 <div class="col-sm-3" data-aos="fade-right"><img src="./images/why-choose/Save-time.svg" height="150"
                         width="150" alt="">
                     <h3>Save Time</h3>
-                    <p>We have physiotherapists registered with us which saves you the time in searching. 
+                    <p>We have physiotherapists registered with us which saves you the time in searching.
                         We can select a therapist from our list.</p>
                 </div>
                 <div class="col-sm-3" data-aos="fade-right"><img src="./images/why-choose/right-match.svg" height="150"
                         width="150" alt="">
                     <h3>Right Match</h3>
-                    <p>Our physiotherapists have many different skills, many specialized. We will select the right one for 
+                    <p>Our physiotherapists have many different skills, many specialized. We will select the right one
+                        for
                         you individual problem.</p>
                 </div>
                 <div class="col-sm-3" data-aos="fade-left"><img src="./images/why-choose/affordable-pricing.svg"
                         height="150" width="150" alt="">
                     <h3>Affordable Price</h3>
-                    <p>We will give you a price for you to agree after the first diagnostic session. 
+                    <p>We will give you a price for you to agree after the first diagnostic session.
                         We will agree a payment plan to suit your pocket.
-                        
-                        </p>
+
+                    </p>
                 </div>
                 <div class="col-sm-3" data-aos="fade-left"><img src="./images/why-choose/best-deal.svg" height="150"
                         width="150" alt="">
                     <h3>Best Deal</h3>
-                    <p>With you and the therapist we will monitor your progress through the treatment series. 
+                    <p>With you and the therapist we will monitor your progress through the treatment series.
                         This will help both you and ourselves to ensure you are making progress.</p>
                 </div>
             </div>
@@ -329,33 +350,44 @@
                 <!-- Form Div Starts -->
                 <div class="col-sm-6">
                     <!-- Form Starts From Here -->
-                    <form id="contact" action="" method="post">
-                        <fieldset style="margin-left: 15px;">
-                            <h4>Are you a new patient?</h4>
-                            <input type="radio" id="yes" name="patient" value="yes">
-                            <label for="male">Yes</label>
-                            <input type="radio" id="no" name="patient" value="no">
-                            <label for="female">No</label>
+                    <form id="form" action="#" method="">
+                        <fieldset>
+                            <!-- <label for="">Name*</label> -->
+                            <input placeholder="First Name" type="text" tabindex="1" required autofocus>
+                            <span><i class="fa fa-user"></i></span>
                         </fieldset>
                         <fieldset>
                             <!-- <label for="">Name*</label> -->
-                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                            <input placeholder="Last Name" type="text" tabindex="1" required autofocus>
+                            <span><i class="fa fa-user"></i></span>
                         </fieldset>
                         <fieldset>
+                            <!-- <label for="">Name*</label> -->
+                            <input placeholder="Your City" type="text" tabindex="1" required autofocus>
+                            <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                        </fieldset>
+                        <fieldset class="inputbox">
                             <!-- <label for="">Email*</label> -->
-                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                            <input placeholder="Your Email Address" type="email" class="form-control" id="email"
+                                name="email" tabindex="2" required>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span id="text"></span>
                         </fieldset>
                         <fieldset>
                             <!-- <label for="">Mobile No*</label> -->
                             <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
                         </fieldset>
-                        <fieldset id="agree">
+                        <!-- <fieldset id="agree">
                             <input type="checkbox" id="reminder" name="reminder" value="reminder"
                                 style="display: inline-block !important; margin-left: 15px;">
-                            <label style="display: inline-block; font-size: 14px; margin-left: 5px;" for="male">I agree to
+                            <label style="display: inline-block; font-size: 14px; margin-left: 5px;" for="male">I agree
+                                to
                                 receive SMS reminders.</label>
+                        </fieldset> -->
+                        <fieldset class="button">
+                            <button><a href="#">Book Now</a></button>
                         </fieldset>
-                        <button><a href="#">Book Now</a></button>
                     </form>
                     <!-- Form Ends Here -->
 
@@ -364,12 +396,9 @@
 
                 <!-- Calendar Code Start -->
                 <div class="col-sm-6">
-                    <!-- <iframe
-                        src="https://calendar.google.com/calendar/embed?height=332&amp;wkst=1&amp;bgcolor=%23311b92&amp;ctz=Asia%2FKolkata&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showCalendars=0&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043"
-                        style="border-width:0" width="500" height="332" frameborder="0" scrolling="no"></iframe> -->
+                    <div id='map'></div>
                 </div>
-                <!-- Calendar Code End -->
-                <!-- <button><a href="#">Book Now</a></button> -->
+
             </div>
         </div>
     </div>
@@ -381,20 +410,20 @@
             <div class="row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
-                    <p><a href="about.html">About</a></p>
-                    <p><a href="#">Blog</a></p>
-                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <!-- <p><a href="#">Blog</a></p> -->
+                    <p><a href="#">Contact</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Services</h3>
-                    <p><a href="#">Location</a></p>
-                    <p><a href="#">Resource</a></p>
+                    <!-- <p><a href="#">Location</a></p>
+                    <p><a href="#">Resource</a></p> -->
                     <p><a href="#">FAQ</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>For Physiotherapist</h3>
                     <p><a href="careers.html">Carrers</a></p>
-                    <p><a href="#">Doctors Resorces</a></p>
+                    <!-- <p><a href="#">Doctors Resorces</a></p> -->
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Follow Us On:</h3>
@@ -407,8 +436,57 @@
             <hr style="border-top:1px solid white">
             <div class="row">
                 <div class="col-sm-8">
-                    <p><a href="">ToS for Patients</a> | <a href="">ToS for Therapist</a> |
-                        <a href="">Privacy Policy</a></p>
+                    <!-- <p><a href="">ToS for Patients</a> | <a href="">ToS for Therapist</a> |
+                        <a href="">Privacy Policy</a></p> -->
+                    <p><a href="" data-toggle="modal" data-target="#exampleModalLong">Terms and Conditions</a> | <a
+                            href="">Privacy Policy</a></p>
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Some text to enable scrolling..</h3>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     <p>Copyright © 2020 Right Physio Management</p>
@@ -417,6 +495,15 @@
         </div>
     </div>
     <!-- Footer Code End Here -->
+
+    <a id="button"></a>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- GSAP Text and Image Animation CND Link -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
 
     <!-- Popper.js CND Link is for positioning purpose -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -430,8 +517,167 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
     <!-- My Custom Script -->
     <script src="./js/script.js"></script>
+    <script type="text/javascript">
+        mapboxgl.accessToken =
+            'pk.eyJ1Ijoic2F0eWFtMDA0IiwiYSI6ImNrOGMwY3Z5NTBoZjczaHFwZ2Y5bmpibjMifQ.pJU8yNe5zh3J_MRuIIbBAA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [75.826917, 26.840528],
+            zoom: 11.15
+        });
+
+        map.on('load', function () {
+            map.addSource('places', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'FeatureCollection',
+                    'features': [{
+                            'type': 'Feature',
+                            'properties': {
+                                'description': '<strong>Jagatpura Jaipur</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+                                'icon': 'hospital'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [75.826917, 26.840528]
+                            }
+                        },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Mad Men Season Five Finale Watch Party</strong><p>Head to Lounge 201 (201 Massachusetts Avenue NE) Sunday for a <a href="http://madmens5finale.eventbrite.com/" target="_blank" title="Opens in a new window">Mad Men Season Five Finale Watch Party</a>, complete with 60s costume contest, Mad Men trivia, and retro food and drink. 8:00-11:00 p.m. $10 general admission, $20 admission and two hour open bar.</p>',
+                        //         'icon': 'theatre'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.003168, 38.894651]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Big Backyard Beach Bash and Wine Fest</strong><p>EatBar (2761 Washington Boulevard Arlington VA) is throwing a <a href="http://tallulaeatbar.ticketleap.com/2012beachblanket/" target="_blank" title="Opens in a new window">Big Backyard Beach Bash and Wine Fest</a> on Saturday, serving up conch fritters, fish tacos and crab sliders, and Red Apron hot dogs. 12:00-3:00 p.m. $25.grill hot dogs.</p>',
+                        //         'icon': 'bar'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.090372, 38.881189]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Ballston Arts & Crafts Market</strong><p>The <a href="http://ballstonarts-craftsmarket.blogspot.com/" target="_blank" title="Opens in a new window">Ballston Arts & Crafts Market</a> sets up shop next to the Ballston metro this Saturday for the first of five dates this summer. Nearly 35 artists and crafters will be on hand selling their wares. 10:00-4:00 p.m.</p>',
+                        //         'icon': 'art-gallery'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.111561, 38.882342]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Seersucker Bike Ride and Social</strong><p>Feeling dandy? Get fancy, grab your bike, and take part in this year\'s <a href="http://dandiesandquaintrelles.com/2012/04/the-seersucker-social-is-set-for-june-9th-save-the-date-and-start-planning-your-look/" target="_blank" title="Opens in a new window">Seersucker Social</a> bike ride from Dandies and Quaintrelles. After the ride enjoy a lawn party at Hillwood with jazz, cocktails, paper hat-making, and more. 11:00-7:00 p.m.</p>',
+                        //         'icon': 'bicycle'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.052477, 38.943951]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Capital Pride Parade</strong><p>The annual <a href="http://www.capitalpride.org/parade" target="_blank" title="Opens in a new window">Capital Pride Parade</a> makes its way through Dupont this Saturday. 4:30 p.m. Free.</p>',
+                        //         'icon': 'rocket'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.043444, 38.909664]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
+                        //         'icon': 'music'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.031706, 38.914581]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
+                        //         'icon': 'music'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.020945, 38.878241]
+                        //     }
+                        // },
+                        // {
+                        //     'type': 'Feature',
+                        //     'properties': {
+                        //         'description': '<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
+                        //         'icon': 'music'
+                        //     },
+                        //     'geometry': {
+                        //         'type': 'Point',
+                        //         'coordinates': [-77.007481, 38.876516]
+                        //     }
+                        // }
+                    ]
+                }
+            });
+            // Add a layer showing the places.
+            map.addLayer({
+                'id': 'places',
+                'type': 'symbol',
+                'source': 'places',
+                'layout': {
+                    'icon-image': '{icon}-15',
+                    'icon-allow-overlap': true
+                }
+            });
+
+            // When a click event occurs on a feature in the places layer, open a popup at the
+            // location of the feature, with description HTML from its properties.
+            map.on('click', 'places', function (e) {
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var description = e.features[0].properties.description;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(description)
+                    .addTo(map);
+            });
+
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', 'places', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'places', function () {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+    </script>
     <script>
         $(document).ready(function () {
             // Force The Page To Load From Top
@@ -443,10 +689,58 @@
                 disable: 'mobile',
                 disable: 'tablet',
             });
+            var rule = CSSRulePlugin.getRule(".anim1 span:after");
+
+            gsap.from(".anim1", {
+                opacity: 0,
+                duration: 1,
+                y: -50,
+                stagger: 0.6,
+                delay: 1
+            });
+            gsap.to(rule, {
+                cssRule: {
+                    scaleY: 0
+                },
+                duration: 1
+            });
+            gsap.from("#doc_img", {
+                duration: 1,
+                x: 30,
+                opacity: 0,
+                delay: 1.4
+            });
+            gsap.from("#how-works", {
+                duration: 3,
+                x: 300,
+                opacity: 0,
+                scale: 0.5
+            });
+            var btn = $('#button');
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+
+            swal({
+                title: "Alert",
+                text: "This Website Is Under Construction!",
+                icon: 'info',
+            });
         });
     </script>
+
 </body>
-
-
 
 </html>
