@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -6,6 +8,14 @@ body {
 html {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.bg-img {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: auto;
 }
 
 .phone_book_button {
@@ -20,12 +30,12 @@ html {
     list-style-type: none;
     text-decoration: none;
     background-color: #311B92;
+    color: white;
     padding: 10px 12px;
     border-radius: 12px;
     font-size: 14px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    color: white;
 }
 
 .phone_book button {
@@ -127,64 +137,160 @@ nav ul li ul li a {
     margin-right: 15px;
     float: right;
 }
-#content {
-    margin-top: 50px !important;
+
+.contact {
+    margin: 50px 0;
 }
 
-#content-text p {
-    line-height: 1.5em;
-    font-size: 18px;
-    color: #181818;
-    font-family: "Lato", sans-serif;
-}
-
-.QnA h2 {
-    text-align: left;
-    color: #009345;
-    margin: 30px auto;
+.contact h2 {
+    font-size: 34px;
     font-family: "Poppins", sans-serif;
-    font-weight: 900;
 }
 
-.QnA ul li {
+.contact p {
+    margin: 20px 0;
     font-size: 18px;
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.QnA ol {
-    list-style: none;
-    counter-reset: li
+.social-icons {
+    margin-bottom: 30px;
 }
 
-.QnA ol li::before {
-    content: counter(li);
-    color: #181818;
+.social-icons a {
+    color: #fdfdfd;
+    margin: 0 3px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 38px;
+    font-size: 12px;
 }
 
-.QnA ol li {
-    counter-increment: li;
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
+.social-icons a.fb {
+    background: #3c579a;
 }
 
-#book-button button {
-    margin: 30px auto;
-    display: block;
-    border-radius: 15px;
-    border: none;
-    background-color: #009345;
-    padding: 12px 32px;
+.social-icons a.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-#book-button button a {
-    font-size: 24px;
-    color: white;
+.social-icons a.linkd {
+    background: #0e76a8;
+}
+
+.input-form p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-form fieldset .fa {
+    float: left;
+    margin-left: 10px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+    color: #009345;
+}
+
+.input-form input[type="text"] {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background: #FFF;
+    padding: 0 35px 0;
+    height: 45px;
+    font-weight: 100;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #009345;
+    margin-bottom: 10px;
+}
+
+.input-form input[type="text"]:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.input-form input[type="email"] {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background: #FFF;
+    padding: 0 35px 0;
+    height: 45px;
+    font-weight: 100;
+    font-size: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #009345;
+    margin-bottom: 10px;
+}
+
+.input-form input[type="email"]:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.input-form input[type="tel"] {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background: #FFF;
+    padding: 0 35px 0;
+    height: 45px;
+    font-weight: 100;
+    font-size: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #009345;
+    margin-bottom: 10px;
+}
+
+.input-form input[type="tel"]:hover:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.input-form textarea {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background: #FFF;
+    padding: 15px 36px;
+    font-weight: 100;
+    font-size: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #009345;
+    margin-bottom: 10px;
+}
+
+.input-form textarea:hover:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.input-form a {
+    background: #009345;
+    color: #fff;
     text-decoration: none;
-
+    padding: 9px 40px;
+    width: 150px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+.input-form.submit{
+    width: 500px;
 }
 
 .footer {
@@ -222,7 +328,6 @@ nav ul li ul li a {
     font-family: "Poppins", sans-serif;
 }
 
-
 @media only screen and (max-width: 800px) {
     .navigation {
         width: 100%;
@@ -243,8 +348,8 @@ nav ul li ul li a {
 
     .phone_book p a {
         font-size: 12px;
-        /* background-color: #311B92;
-      color: white; */
+        background-color: #311B92;
+        color: white;
     }
 
     .phone_book p button {
@@ -352,81 +457,4 @@ nav ul li ul li a {
         top: 0;
         transform: rotate(-45deg);
     }
-
-    .phone_book p {
-        text-align: center;
-    }
-
-    .QnA h1 {
-        font-size: 38px;
-    }
-
-    .QnA h2 {
-        font-size: 28px;
-    }
-
-    .footer .col-sm-3 {
-        margin-top: 10 !important;
-    }
-
-    .footer h3 {
-        font-size: 16px;
-    }
-
-    .footer p a {
-        font-size: 12px;
-    }
-
-    .footer .col-sm-4 p {
-        font-size: 12px !important;
-        text-align: center;
-    }
-
-    .footer .col-sm-8 p {
-        text-align: center;
-    }
-}
-
-
-/* Scroll To Top Button */
-
-#button {
-    display: inline-block;
-    background-color: #009345;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-
-#button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 18px;
-    /* line-height: 50px; */
-    color: #fff;
-}
-
-#button:hover {
-    cursor: pointer;
-    background-color: #311B92;
-}
-
-#button:active {
-    background-color: #311B92;
-}
-
-#button.show {
-    opacity: 1;
-    visibility: visible;
 }

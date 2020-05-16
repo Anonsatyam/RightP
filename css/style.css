@@ -69,9 +69,12 @@ html {
   height: 70px;
   background: white;
   width: 100%;
-  border-radius: 15px !important;
+  /* border-radius: 15px !important; */
   display: inline-block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  z-index: 2;
+  position: fixed;
+  top: 0
 }
 
 .nav-container {
@@ -979,13 +982,16 @@ fieldset .fa {
   z-index: 2;
   color: #009345;
 }
+
 .modal-body,
-.modal-title{
+.modal-title {
   color: #181818;
 }
+
 .swal-overlay {
   background-color: rgba(43, 165, 137, 0.45);
 }
+
 .swal-button-container {
   margin: 5px;
   display: block !important;
@@ -994,6 +1000,7 @@ fieldset .fa {
   margin-right: auto !important;
   max-width: 150px !important;
 }
-.swal-button{
+
+.swal-button {
   width: 150px;
 }
