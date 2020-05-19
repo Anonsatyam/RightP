@@ -14,12 +14,49 @@
     <!-- Google Fonts CND Links -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
     <link rel="stylesheet" href="css/contact.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        .error {
+            position: relative;
+            animation: shake .1s linear;
+            animation-iteration-count: 3;
+            border: 1px solid red;
+        }
+
+        @keyframes shake {
+            0% {
+                left: -5px;
+            }
+
+            100% {
+                right: -5px;
+            }
+        }
+
+        .social-icons .col-sm-12 .fa {
+            color: #009345;
+            font-size: 30px;
+        }
+
+        .social-icons .col-sm-12 p {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+
+        .social-icons .col-sm-12 a {
+            color: #181818;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,7 +77,7 @@
             <div class="container">
                 <div class="nav-container">
                     <div class="brand">
-                        <a href="index.html"><img src="./images/logo/logo-min.png" width="150px" alt=""></a>
+                        <a href="index.html"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
@@ -103,40 +140,68 @@
     <div class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 social-icons">
-                    <h1>Right Physio Contact <br> Information</h1>
-                    <p>We are on Social Network</p>
-                    <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="linkd"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <p>Our Office: 1887 Whitney Mesa Dr, Henderson, NV 89014, United States</p>
+                <div style="margin-top: 50px;" class="col-sm-6 social-icons">
+                    <h1 style="text-align: center;">Contact Information</h1>
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i style="text-align: center;" class="fa fa-home" aria-hidden="true"></i> <br>
+                            Mnit Innovation And Incubation Center <br> Naya Bass, Jhalana Gram, Malviya
+                            Nagar,
+                            <br> Jaipur,
+                            Rajasthan 302017
+                        </p>
+                    </div>
+
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i style="text-align: center;" class="fa fa-phone-square" aria-hidden="true"></i> <br>
+                            <span><a href="tel:+91 9076319176"> 9076319176</a></span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i><br>
+                            <Span><a href="mailto:info@rightphysio.com">
+                                    info@rightphysio.com</a></Span>
+                        </p>
+                    </div>
+                    <div style="text-align: center; font-family: 'Roboto', sans-serif; font-weight: 700;">
+                        <a href="#" class="fb"><i class="fa fa-facebook faa-ring animated fa-4x'"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="insta"><i class="fa fa-instagram faa-ring animated fa-4x'" aria-hidden="true"></i></a>
+                        <a href="#" class="linkd"><i class="fa fa-linkedin faa-ring animated fa-4x'" aria-hidden="true"></i></a>
+                        <p>We are on Social Network</p>
+                    </div>
                 </div>
                 <div class="col-sm-6 input-form">
                     <h3>Get In Touch</h3>
                     <p>Fell Free To Drop Us A Line.</p>
                     <form action="#">
                         <fieldset>
-                            <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
-                            <span><i class="fa fa-user"></i></span>
+                            <span id="nameError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                            <span><i class="fa fa-user" id="user"></i></span>
                         </fieldset>
                         <fieldset>
-                            <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required>
-                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span id="emailError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" id="email" placeholder="Your Email" required>
+                            <span><i class="fa fa-envelope" id="envelope" aria-hidden="true"></i></span>
                         </fieldset>
                         <fieldset>
-                            <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number" required>
-                            <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                            <span id="phoneError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+                            <span><i class="fa fa-phone-square" id="square" aria-hidden="true"></i></span>
                         </fieldset>
                         <fieldset>
-                            <input type="text" name="loc" id="loc" placeholder="Enter Your City" required>
-                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span id="cityError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" id="loc" placeholder="Enter Your City" required>
+                            <span><i class="fa fa-map-marker" id="marker" aria-hidden="true"></i></span>
                         </fieldset>
                         <fieldset>
-                            <textarea name="msg" id="msg" cols="30" rows="10"
-                                placeholder="Enter your Message here"></textarea>
+                            <textarea id="msg" cols="30" rows="10" placeholder="Enter your Message here"></textarea>
                         </fieldset>
                         <fieldset id="submit">
-                            <a href="#">Send</a>
+                            <a href="#" onclick="myfun()">Send</a>
                         </fieldset>
                     </form>
                 </div>
@@ -185,41 +250,250 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Right Physio - Terms and
+                                        Conditions
+                                    </h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <h3>Some text to enable scrolling..</h3>
-                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Our commitment to you is based on more than just excellent Physiotherapy care at
+                                        home.
+                                        Our patients receive respectful care and are not discriminated against based on
+                                        age,
+                                        gender, ethnicity, beliefs, and Religious or economic status.
+                                        <br><br>
+                                        In order to achieve outstanding treatment results, we require an equal
+                                        commitment from you.
+                                        Take the time to read all of our Terms and Conditions as clarity, communication
+                                        and understanding
+                                        will ensure that we’re always on the same page and achieving the best outcome
+                                        possible.
+                                        <br><br>
+                                        All of our professional recommendations are based on the information provided by
+                                        you, an objective
+                                        and expert physiotherapy examination and the specific goals determined by you
+                                        and your physiotherapist.
+                                        It is important to understand our Terms and Conditions and for you to
+                                        acknowledge that ultimately, it is
+                                        your responsibility to follow our advice and avoid situations that may aggravate
+                                        your condition. We
+                                        acknowledge an infinite number of variables can impact on the outcomes of any
+                                        treatment program.
+                                        <br><br>
+                                        We are confident that if you follow our recommendations, and any further
+                                        opinions subsequent to reviews
+                                        that may occur periodically throughout the term of your treatment, then we can
+                                        help you to achieve outstanding results.
+                                    </p>
+                                    <h6>1. Consent to Assessment and Treatment</h6>
+                                    <p>You hereby request and give consent to our therapists to perform all
+                                        necessary Physiotherapy examinations, manipulations, Electro- therapy and
+                                        Exercise- therapy procedures in
+                                        accordance with their professional training and understanding of your clinical
+                                        condition. Consent is your
+                                        understanding that you have an opportunity to discuss with your therapist, the
+                                        nature and purpose of your
+                                        physiotherapy care before any treatment is delivered.
+                                        <br><br>
+                                        You acknowledge and accept the following:<br><br>
+                                        <ul>
+                                            <li>
+                                                The physical nature of physiotherapy and related treatments.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                You have the right to refuse intervention or seek a further opinion and
+                                                to
+                                                provide feedback and make a complaint.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                The adverse risks associated with treatment, including stiffness and
+                                                soreness,
+                                                soft tissue injury, neurological complications,
+                                                cerebro-vascular injuries, skin irritations, burns and other minor
+                                                complications.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                The Probability of risk is lowered by assessment procedures. Most
+                                                patients
+                                                receive our services without the need for a medical
+                                                or other referral. However, in the event a referral from another medical
+                                                practitioner has been given, it is highly recommended
+                                                that such a referral is provided to the treating physiotherapist to
+                                                assist in
+                                                the continuity of care and our delivery of the most
+                                                appropriate treatment for the patient.
+                                            </li>
+                                        </ul>
 
-                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                        id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </p>
+                                    <h6>2. The Expectation from your Physiotherapy assessment</h6>
+                                    <p>
+                                        During the
+                                        assessment, our Physiotherapist will ask you some questions about your
+                                        symptoms and will then ask to assess the problem area. In order to properly
+                                        Physiotherapist may need to see the affected area. During home
+                                        visit patients need to wear the appropriate clothing to conduct the assessment
+                                        in a smooth way eg- wear of shorts to assess lower limb or wear
+                                        the vest top to assess lower back.
+                                        <br>
+                                        <ul>
+                                            <li>While assessing the presence of family members recommended especially in
+                                                the
+                                                case of a female patient. Please feel ask any questions to our
+                                                Physiotherapist
+                                                during your assessment and treatment session, your Physiotherapist will
+                                                happy to
+                                                explain things to you.</li>
+                                            <br>
+                                            <li>
+                                                After your assessment, your Physiotherapist will discuss their findings
+                                                with
+                                                you and propose a treatment plan treatment specifically to your own
+                                                goals.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <h6>3. Expectation from your Physiotherapy treatment </h6>
+                                    <p>
+                                        Physiotherapy has
+                                        over the years proved its effectiveness in helping patients in restoring their
+                                        health and enhancing their physical strength, function and mobility.
+                                        To further enhance your experience with physiotherapy, our Physiotherapists
+                                        personally visit you and perform physiotherapy at home. For patient condition,
+                                        there is no particular guarantee or assurance from our Physiotherapists.
+                                        Some of the benefits of getting physiotherapy at home include
+                                        <br>
+                                        <ul>
+                                            <li>Enables convenience</li><br>
+                                            <li>Provides personalized care</li><br>
+                                            <li>Brings about a faster healing process</li><br>
+                                            <li>No mobility issues</li><br>
+                                            <li>Better time management</li><br>
+                                            <li>Cost effective</li><br>
+                                            <li>Family support and supervision</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <h6>4. Number of your Physiotherapy treatment sessions</h6>
+                                    <p>
+                                        Our aim is to
+                                        provide the Services using reasonable care and skill. Our Physiotherapists will
+                                        recommend number of visits required to cure your condition based on that your
+                                        treatment protocol will be lined in your case file. Some patient's conditions
+                                        may take longer than others to treat and we will regularly reassess the
+                                        treatment plan.
+                                        <br>
+                                        <ul>
+                                            <li>If we have not agreed the number of sessions to be provided, we shall
+                                                provide
+                                                sessions on a session-by-session (weekly/Monthly) basis.</li>
+                                            <br>
+                                            <li>We will agree the date and time of the first session and any subsequent
+                                                sessions by on call/SMS/What’s up or by e-mail.</li><br>
+                                            <li>We may stop a session at any time and not continue it if we consider
+                                                that
+                                                patient condition is improved 100% or in case patient is not following
+                                                our
+                                                instructions. Inappropriate behavior of the patient or patient party
+                                                leads to
+                                                termination of patient treatment.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <h6>5. Cancellation of appointment</h6>
+                                    <p>
+                                        We believe that your health should be a
+                                        priority in your life and therefore your treatment should be a priority in your
+                                        schedule. Last minute cancellations and not attending calls can have a major
+                                        impact on our services and negatively affect your treatment progress.
+                                        <br>
+                                        <ul>
+                                            <li>To cancel or reschedule an appointment without incurring a charge, we
+                                                require
+                                                at least 24 hours notice through phone calls/SMS/What’s up message.</li>
+                                            <br>
+                                            <li>Reminder SMS texts are a proactive approach on our behalf along with our
+                                                Physiotherapists will call half an hour before your appointment in order
+                                                to
+                                                avoid cancellation of your appointments.</li>
+                                            <br>
+                                            <li>Appointments being cancelled or rescheduled within 3 hours of the
+                                                appointment
+                                                time will be liable to a late cancellation charge.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <h6>6. Payment of appointment</h6>
+                                    <p>
+                                        It is expected that all fees are paid in
+                                        full at the time of consultation. We accept cash
+                                        and cashless methods - Paytm /Google-pay /Phone-Pe /UPI Pay.
+                                    </p>
+                                    <br>
+                                    <h6>7. Confidentiality and privacy policy</h6>
+                                    <p>
+                                        Personal and health information
+                                        you provide during your consultation and subsequent treatment will be collected
+                                        for the primary purpose of providing high quality health care. We shall treat
+                                        all personal and business information supplied by you as confidential. We shall
+                                        not disclose such information to any third party without your prior permission,
+                                        except where required by law or where action might be necessary to protect you
+                                        or someone else.
+                                        <br><br>
+                                        We may send you information regarding events/Physiotherapy camps happenings at
+                                        your location via a number of possible ways including: SMS/email/calls or what’s
+                                        Up messages.
+                                        <br><br>
+                                        <strong>Reasons we may contact you include:</strong>
+                                        <br><br>
+                                        <ul>
+                                            <li>To administer accounts and process payments.</li><br>
+                                            <li>To communicate with you regarding any issues affecting your treatment.
+                                            </li><br>
+                                            <li>Provide information on services and benefits available to patient.</li>
+                                            <br>
+                                            <li>Appointment Reminders.</li><br>
+                                            <li>Appointment Follow Up calls to improve our services.</li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                    <h6>8. Exclusion of Liability</h6><br>
+                                    <p>
+                                        The Practice Directors and employees of this Practice shall not be liable for,
+                                        nor shall they accept any responsibility for any injury, loss or damage
+                                        howsoever sustained by any person or persons arising out of any of the
+                                        treatments or procedures delivered in this Practice or in any way whatsoever
+                                        which does not arise from any negligent act or omission of the Practice Director
+                                        and employees.
+                                    </p>
+                                    <br>
+
+                                    <p>If you have any queries about these Terms and Conditions, please contact: Right
+                                        Physio
+                                        <br><br>
+                                        <div class="row" id="modalRow">
+                                            <div class="col-sm-4"><span style="text-align: center;"><i
+                                                        style="text-align: center;" class="fa fa-home"
+                                                        aria-hidden="true"></i></span><br>
+                                               MNIT Innovation And Incubation Center Naya Bass, Jhalana
+                                                Gram, Malviya Nagar, Jaipur, Rajasthan 302017
+                                            </div>
+                                            <div class="col-sm-4"><span><i class="fa fa-phone-square"
+                                                        aria-hidden="true"></i></span> <br> <span><a
+                                                        href="tel:+91 9076319176"> +91 9076319176</a></span></div>
+                                            <div class="col-sm-4"><span><i class="fa fa-envelope"
+                                                        aria-hidden="true"></i></span> <br><Span><a
+                                                        href="mailto:info@rightphysio.com">
+                                                        info@rightphysio.com</a></Span>
+                                            </div>
+                                        </div>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -160,13 +160,13 @@ nav ul li ul li a {
 .social-icons a {
     color: #fdfdfd;
     margin: 0 3px;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     text-align: center;
     line-height: 35px;
-    border-radius: 38px;
-    font-size: 12px;
+    border-radius: 40%;
+    font-size: 50px;
 }
 
 .social-icons a.fb {
@@ -289,7 +289,8 @@ nav ul li ul li a {
     border-radius: 12px;
     font-size: 18px;
 }
-.input-form.submit{
+
+.input-form.submit {
     width: 500px;
 }
 
@@ -457,4 +458,214 @@ nav ul li ul li a {
         top: 0;
         transform: rotate(-45deg);
     }
+}
+
+.modal-body,
+.modal-title {
+    color: #181818;
+}
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+}
+
+.swal-button-container {
+    margin: 5px;
+    display: block !important;
+    position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 150px !important;
+}
+
+.swal-button {
+    width: 150px;
+}
+
+.modal.show .modal-dialog {
+    max-width: 900px;
+}
+
+.modal-body {
+    padding: 25px 35px;
+}
+.modal-body p,
+.modal-body ul li{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8em;
+    font-family: "Roboto", sans-serif;
+}
+.modal-body h6{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+
+}
+#modalRow .col-sm-4,
+#modalRow .col-sm-4 a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8em;
+    font-family: "Roboto", sans-serif;
+}
+#modalRow .fa{
+    font-size: 30px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #009345 !important;
+}
+
+#modalRow .col-sm-4 .fa {
+    color: #009345;
+}
+
+#modalRow .col-sm-4 {
+    text-align: center
+}
+
+#modalRow .col-sm-4 a {
+    color: #181818;
+}
+
+#modalRow .col-sm-4 a:hover {
+    color: #009345;
+}
+
+/* BELL */
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial;
 }

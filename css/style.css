@@ -30,7 +30,7 @@ html {
   background-image: url("../images/banner/top-rt-bg-min.png") !important;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 650px;
   width: auto;
 }
 
@@ -159,6 +159,8 @@ nav ul li ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900 !important;
   text-transform: capitalize;
+  margin-bottom: 40px;
+  line-height: 1.2em;
 }
 
 #mr_doc h4 {
@@ -186,6 +188,7 @@ nav ul li ul li a {
   background-color: #009345;
   padding: 10px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  margin-top: 50px;
 }
 
 .main-button a {
@@ -1003,4 +1006,59 @@ fieldset .fa {
 
 .swal-button {
   width: 150px;
+}
+
+.modal.show .modal-dialog {
+  max-width: 900px;
+}
+
+.modal-body {
+  padding: 25px 35px;
+}
+
+.modal-body p,
+.modal-body ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-body h6 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+
+}
+
+#modalRow .col-sm-4,
+#modalRow .col-sm-4 a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+#modalRow .fa {
+  font-size: 30px;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #009345 !important;
+}
+
+#modalRow .col-sm-4 .fa {
+  color: #009345;
+}
+
+#modalRow .col-sm-4 {
+  text-align: center
+}
+
+#modalRow .col-sm-4 a {
+  color: #181818;
+}
+
+#modalRow .col-sm-4 a:hover {
+  color: #009345;
 }

@@ -739,3 +739,81 @@ a#loadMore {
   opacity: 1;
   visibility: visible;
 }
+
+
+.modal-body,
+.modal-title {
+  color: #181818;
+}
+
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
+}
+
+.swal-button-container {
+  margin: 5px;
+  display: block !important;
+  position: relative;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 150px !important;
+}
+
+.swal-button {
+  width: 150px;
+}
+
+.modal.show .modal-dialog {
+  max-width: 900px;
+}
+
+.modal-body {
+  padding: 25px 35px;
+}
+
+.modal-body p,
+.modal-body ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-body h6 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+
+}
+
+#modalRow .col-sm-4,
+#modalRow .col-sm-4 a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+#modalRow .fa {
+  font-size: 30px;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #009345 !important;
+}
+
+#modalRow .col-sm-4 .fa {
+  color: #009345;
+}
+
+#modalRow .col-sm-4 {
+  text-align: center
+}
+
+#modalRow .col-sm-4 a {
+  color: #181818;
+}
+
+#modalRow .col-sm-4 a:hover {
+  color: #009345;
+}
