@@ -1,11 +1,14 @@
+<?php
+  require_once('config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers - RightPhysio</title>
-
+    <title>Contact Us - RightPhyio</title>
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,12 +18,54 @@
     <!-- Google Fonts CND Links -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        .error {
+            position: relative;
+            animation: shake .1s linear;
+            animation-iteration-count: 3;
+            border: 1px solid red;
+        }
+
+        @keyframes shake {
+            0% {
+                left: -5px;
+            }
+
+            100% {
+                right: -5px;
+            }
+        }
+
+        .social-icons .col-sm-12 .fa {
+            color: #009345;
+            font-size: 30px;
+        }
+
+        .social-icons .col-sm-12 p {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+
+        .social-icons .col-sm-12 a {
+            color: #181818;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <div class="bg-img" id="bg-img">
+        <!-- Phone Number & Book Button Above Navbar Starts From Here -->
         <div class="phone_book_button">
             <div class="col-sm-8"></div>
             <div class="col-sm-4 phone_book">
@@ -28,25 +73,27 @@
                         9076319176</a><span><button>Book Online</button></span></p> -->
             </div>
         </div>
+        <!-- Phone Number & Book Button Above Navbar Ends Here -->
 
+        <!-- Navigatiob Bar Code Starts From Here -->
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
                 <div class="nav-container">
                     <div class="brand">
-                        <a href="index.html"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
                         <ul class="nav-list">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="nav-dropdown" style="margin-top: 0 !important;">
                                     <li>
-                                        <a href="physiotherapy.html" target="_blank">
+                                        <a href="physiotherapy" target="_blank">
                                             Physiotherapy</a>
                                     </li>
                                     <!-- <li>
@@ -75,7 +122,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="about">About Us</a>
                             </li>
                             <!-- <li>
                                     <a href="#!">Solutions</a>
@@ -83,11 +130,10 @@
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li>
-                                <a href="careers.html">Careers</a>
+                                <a href="careers">Careers</a>
                             </li>
-
                         </ul>
                     </nav>
                 </div>
@@ -95,167 +141,73 @@
         </div>
         <!-- </div> -->
     </div>
-    <div class="container" id="head-info">
-        <h1>CAREERS</h1>
-    </div>
-    <div class="container" id="apply-form">
-        <div class="form-container">
-            <form id="contact" action="" method="post">
-                <h2 style="text-align: left; margin-left: 1.2rem">Apply For Job</h2>
-                <hr>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="fname">First Name <span>*</span></label>
-                                <input type="text" name="fname" required
-                                    data-validation-required-message="Please enter your First Name">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="lname">Last Name <span>*</span></label>
-                                <input type="text" name="lname" required
-                                    data-validation-required-message="Please enter your Last Name">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="email">Email <span>*</span></label>
-                                <input type="email" name="email" required
-                                    data-validation-required-message="Please enter your Email">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="email">Phone <span>*</span></label>
-                                <input type="tel" name="phone" required
-                                    data-validation-required-message="Please enter your phone number">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col sm-6">
-                            <div class="input-group">
-                                <label for="email">Address <span>*</span></label>
-                                <input type="text" name="address" required
-                                    data-validation-required-message="Please enter your Address">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="email">Upload Your CV <span>*</span></label>
-                                <input type="file" name="file" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <label for="email">For What Position You Are Applying For <span>*</span></label>
-                                <input type="text" name="text" required
-                                    data-validation-required-message="Please enter your Preferred Position">
-                            </div>
-                        </div>
-                        <div class="col-sm-6" style="align-self: flex-end;">
-                            <div class="input-group" id="get-job">
-                                <button><a href="#">Book Now</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="job-opening">
-        <div class="container" id="all-card">
-            <h2>current job openings</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>PHYSIOTHERAPIST</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>GRAPHICS DESIGNER</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>CONTENT WRITER</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>CONTENT WRITER</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>CONTENT WRITER</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>CONTENT WRITER</h3>
-                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
-                </div>
-            </div>
-            <div class="row">
-                <a href="#" id="loadMore">Load More</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="we-care">
+    <div class="contact">
         <div class="container">
-            <h2>We Care for our staffs</h2>
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="./images/Carrer/carrer2-01.svg" alt="">
-                    <div class="text">
-                        <span>Training and <br> certification</span>
+                <div style="margin-top: 50px;" class="col-sm-6 social-icons">
+                    <h1 style="text-align: center;">Contact Information</h1>
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i style="text-align: center;" class="fa fa-home" aria-hidden="true"></i> <br>
+                            Mnit Innovation And Incubation Center <br> Naya Bass, Jhalana Gram, Malviya
+                            Nagar,
+                            <br> Jaipur,
+                            Rajasthan 302017
+                        </p>
+                    </div>
 
-                        <small>We organisze regular training
-                            programs for all resources
-                            and maintain a high level of
-                            staff performance.</small>
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i style="text-align: center;" class="fa fa-phone-square" aria-hidden="true"></i> <br>
+                            <span><a href="tel:+91 9076319176"> 9076319176</a></span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12" style="text-align: center;">
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i><br>
+                            <Span><a href="mailto:info@rightphysio.com">
+                                    info@rightphysio.com</a></Span>
+                        </p>
+                    </div>
+                    <div style="text-align: center; font-family: 'Roboto', sans-serif; font-weight: 700;">
+                        <a href="https://www.facebook.com/rightphysio/" class="fb"><i class="fa fa-facebook faa-ring animated fa-4x'"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/rightphysio/" class="insta"><i class="fa fa-instagram faa-ring animated fa-4x'" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/7151614/" class="linkd"><i class="fa fa-linkedin faa-ring animated fa-4x'" aria-hidden="true"></i></a>
+                        <p>We are on Social Network</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="./images/Carrer/carrer3-01.svg" alt="">
-                    <div class="text">
-                        <span>HYGIENE STANDARD</span>
-
-                        <small>We ensure that all our
-                            staffs get their Occupational
-                            health card. For safety of
-                            all of us.</small>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="./images/Carrer/carrer4-01.svg" alt="">
-                    <div class="text">
-                        <span>health and life insurence</span>
-
-                        <small>We offer health and life insurence to all our resources to support and protect our
-                            team member.</small>
-                    </div>
+                <div class="col-sm-6 input-form">
+                    <h3>Get In Touch</h3>
+                    <p>Fell Free To Drop Us A Line.</p>
+                    <form action="#">
+                        <fieldset>
+                            <span id="nameError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                            <span><i class="fa fa-user" id="user"></i></span>
+                        </fieldset>
+                        <fieldset>
+                            <span id="emailError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" name='emailaddress' id="email" placeholder="Your Email" required>
+                            <span><i class="fa fa-envelope" id="envelope" aria-hidden="true"></i></span>
+                        </fieldset>
+                        <fieldset>
+                            <span id="phoneError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="tel" name='phonenumber'  id="phone" placeholder="Enter Your Phone Number" required>
+                            <span><i class="fa fa-phone-square" id="square" aria-hidden="true"></i></span>
+                        </fieldset>
+                        <fieldset>
+                            <span id="cityError" class="text-danger" style="font-weight: bold"></span>
+                            <input type="text" name='city' id="loc" placeholder="Enter Your City" required>
+                            <span><i class="fa fa-map-marker" id="marker" aria-hidden="true"></i></span>
+                        </fieldset>
+                        <fieldset>
+                            <textarea name='message' id="msg" cols="30" rows="10" placeholder="Enter your Message here"></textarea>
+                        </fieldset>
+                        <fieldset id="submit">
+                            <a href="#" onclick="myfun()">Send</a>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -267,19 +219,19 @@
             <div class="row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
-                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="about">About Us</a></p>
                     <!-- <p><a href="#">Blog</a></p> -->
-                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="contact">Contact</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Services</h3>
                     <!-- <p><a href="#">Location</a></p>
-                        <p><a href="#">Resource</a></p> -->
+                    <p><a href="#">Resource</a></p> -->
                     <p><a href="#">FAQ</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>For Physiotherapist</h3>
-                    <p><a href="careers.html">Careers</a></p>
+                    <p><a href="careers">Careers</a></p>
                     <!-- <p><a href="#">Doctors Resorces</a></p> -->
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
@@ -1044,8 +996,9 @@
     </div>
 
 
-    <a id="button"></a>
+    <!-- Header Of Website Ends Here -->
 
+    <a id="button"></a>
 
     <!-- jQuery CND Links -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -1056,24 +1009,18 @@
     </script>
     <!-- My Custom Script -->
     <script src="./js/script.js"></script>
-    <script src="./js/jquery.simpleLoadMore.min.js"></script>
-
-    <script type="text/javascript">
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, '300');
+    <script>
+        $(document).ready(function () {
+            // Force The Page To Load From Top
+            $(this).scrollTop(0);
+            AOS.init({
+                duration: 1500,
+                delay: 80
+            });
+            AOS.init({
+                disable: 'mobile',
+                disable: 'tablet',
+            });
         });
     </script>
 </body>

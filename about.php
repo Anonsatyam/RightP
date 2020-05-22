@@ -39,19 +39,19 @@
             <div class="container">
                 <div class="nav-container">
                     <div class="brand">
-                        <a href="index.html"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
                         <ul class="nav-list">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="nav-dropdown" style="margin-top: 0 !important;">
                                     <li>
-                                        <a href="physiotherapy.html" target="_blank">
+                                        <a href="physiotherapy" target="_blank">
                                             Physiotherapy</a>
                                     </li>
                                     <!-- <li>
@@ -80,7 +80,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="about">About Us</a>
                             </li>
                             <!-- <li>
                                     <a href="#!">Solutions</a>
@@ -88,9 +88,9 @@
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li>
-                                <a href="careers.html">Careers</a>
+                                <a href="careers">Careers</a>
                             </li>
                         </ul>
                     </nav>
@@ -218,9 +218,9 @@
             <div class="row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
-                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="about">About Us</a></p>
                     <!-- <p><a href="#">Blog</a></p> -->
-                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="contact">Contact</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Services</h3>
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>For Physiotherapist</h3>
-                    <p><a href="careers.html">Careers</a></p>
+                    <p><a href="careers">Careers</a></p>
                     <!-- <p><a href="#">Doctors Resorces</a></p> -->
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">

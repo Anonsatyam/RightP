@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physiotherapy - RightPhysio</title>
+    <title>Careers - RightPhysio</title>
 
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/phyaiotherapy.css">
+    <link rel="stylesheet" href="css/careers.css">
 </head>
 
 <body>
@@ -34,19 +34,19 @@
             <div class="container">
                 <div class="nav-container">
                     <div class="brand">
-                        <a href="index.html"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
                         <ul class="nav-list">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="nav-dropdown" style="margin-top: 0 !important;">
                                     <li>
-                                        <a href="physiotherapy.html" target="_blank">
+                                        <a href="physiotherapy" target="_blank">
                                             Physiotherapy</a>
                                     </li>
                                     <!-- <li>
@@ -75,7 +75,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="about">About Us</a>
                             </li>
                             <!-- <li>
                                     <a href="#!">Solutions</a>
@@ -83,10 +83,11 @@
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li>
-                                <a href="careers.html">Careers</a>
+                                <a href="careers">Careers</a>
                             </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -94,139 +95,191 @@
         </div>
         <!-- </div> -->
     </div>
+    <div class="container" id="head-info">
+        <h1>CAREERS</h1>
+    </div>
+    <div class="container" id="apply-form">
+        <div class="form-container">
+            <form id="contact" action="" method="post">
+                <h2 style="text-align: left; margin-left: 1.2rem">Apply For Job</h2>
+                <hr>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="fname">First Name <span>*</span></label>
+                                <input type="text" name="fname" required
+                                    data-validation-required-message="Please enter your First Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="lname">Last Name <span>*</span></label>
+                                <input type="text" name="lname" required
+                                    data-validation-required-message="Please enter your Last Name">
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="content">
-        <h1 style="text-align: center; margin: 30px auto; font-family:'Poppins', sans-serif; font-weight: 900;" ,>
-            PHYSIOTHERAPY</h1>
-        <div class="container" id="content-text">
-            <p><b>Right Physio</b> provides quality of physiotherapy service in Jaipur city of Rajasthan
-                with compassion. We bring top most physiotherapy service into our patient’s homes
-                and aim to make physiotherapy service no only more accessible, but also more
-                affordable and accountable to our patient’s needs.</p>
-            <div class="QnA">
-                <h2>What is physiotherapy?</h2>
-                <p>Physiotherapy is a health care profession which focuses on decreasing pain along with
-                    assists people to restore, maintain and maximize their strength, function, movement, and
-                    overall well-being. It begins with a detailed assessment, which helps the physiotherapist and
-                    patient discuss options for a treatment plan. Physiotherapists have in depth knowledge of
-                    how the body works and specialized hands on clinical skills to assess, diagnose, and treat
-                    symptoms of illness, injury and disability. Physiotherapy includes rehabilitation, as well as
-                    prevention of injury, and promotion of health and fitness. Physiotherapists often work in
-                    teams with other health professionals to help meet an individuals health care needs. <br><br>
-                    <b>Physiotherapy can help you-</b>
-                    <ul>
-                        <li>To become stronger and more flexible</li>
-                        <li>To increase freedom of movement and mobility </li>
-                        <li>To breathe easier</li>
-                        <li>To reduce pain </li>
-                        <li>To stay active</li>
-                        <li>To prevent injury</li>
-                    </ul>
-                    So you can resume activities important to you.
-                </p>
-                <h2>Who can benefits from physiotherapy?</h2>
-                <p>All age group can get benefits from physiotherapy whether it’s a
-                    baby, a young professional in any stream, pregnant women or an
-                    elderly person. <br><br>
-                    If you have any of the below-given conditions, you can opt for
-                    physiotherapy for long-term benefits:<br><br>
-                    <ol>
-                        <li>
-                            For Baby developmental condition like cerebral palsy, autism
-                            condition, club foot etc.
-                        </li>
-                        <br><br>
-                        <li>
-                            A young professional in any stream either male or female get
-                            benefits from physiotherapy like in offices there is lots of back
-                            pain/cervical pain issues as per requirements of computer uses. Many
-                            sports young professional needs their personal physiotherapist to
-                            improve their strength, stamina and injury prevention/rehabilitation
-                            role.
-                        </li>
-                        <br><br>
-                        <li>
-                            For woman health there are many stages to get benefits from
-                            physiotherapy like during pregnancy, after pregnancy, menstruation
-                            changes like menopause and elderly conditions.
-                        </li>
-                        <br><br>
-                        <li>
-                            For elderly patient all systematic problems like cardio-respiratory
-                            conditions eg- Asthma, neurologic conditions eg- Parkinsonism, stroke
-                            and all age related musculoskeletal issues can be addressed with the
-                            help of physiotherapy.
-                        </li>
-                        <br><br>
-                        <li> All kind of palliative care patients can get benefits from
-                            physiotherapy like cancer patients, post surgery patients, disable
-                            patient’s eg- Amputation/ musculoskeletal malfunctioning etc.
-                        </li>
-                    </ol>
-                </p>
-                <br>
-                <h2> What kind of therapies does a Physiotherapist use?</h2>
-                <p>
-                    Mainly there a 3 types of Basic therapies used by physiotherapist-<br><br>
-                    <ol>
-                        <li>
-                            <b>Manual therapy -</b> which includes joint mobilization and manipulation by
-                            physiotherapist used in orthopedic conditions, chest physiotherapy techniques
-                            like chest percussion/ vibration used in cardio-respiratory conditions, Neurological
-                            manual therapy techniques like PNF therapy, NDT therapy. So these are the
-                            manual techniques used by physiotherapist.
-                        </li>
-                        <br><br>
-                        <li>
-                            <b>Exercises therapy -</b> In exercise therapy patient has to participate along with the
-                            physiotherapist so this therapy encourages active participation of the patient and
-                            improves patient’s well being condition physically and psychologically. There are
-                            numerous ways to perform exercises therapy at clinic as well as at patient’s home
-                            with the use of home based objects like strength exercises in the clinic with the
-                            uses of sand bags, dumbbells, therabands etc, and at patient’s home with the help
-                            of any heavy objects like home based sand bags. Same like strength exercise
-                            therapy there are various exercise protocol for improving range, improving
-                            endurance, improving flexibility, improving continence.
-                        </li>
-                        <br><br>
-                        <li>
-                            <b>Electrotherapy -</b> This kind of therapy more ever passive where there is not much
-                            involvement by the patient but patient has to alert while application of these
-                            electrotherapy modalities. Various types of electrotherapy modalities available in
-                            large scale like pain reducing modalities TENS/ IFT, healing based modalities like
-                            Ultrasound therapy/UVR/IRR, Spine condition based modalities like spinal traction,
-                            mobility based modalities like CPM/ WAX unit, Muscle and nerve condition based
-                            modality like electrical stimulator.
-                        </li>
-                    </ol>
-                </p>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" name="email" required
+                                    data-validation-required-message="Please enter your Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="email">Phone <span>*</span></label>
+                                <input type="tel" name="phone" required
+                                    data-validation-required-message="Please enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col sm-6">
+                            <div class="input-group">
+                                <label for="email">Address <span>*</span></label>
+                                <input type="text" name="address" required
+                                    data-validation-required-message="Please enter your Address">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="email">Upload Your CV <span>*</span></label>
+                                <input type="file" name="file" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <label for="email">For What Position You Are Applying For <span>*</span></label>
+                                <input type="text" name="text" required
+                                    data-validation-required-message="Please enter your Preferred Position">
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="align-self: flex-end;">
+                            <div class="input-group" id="get-job">
+                                <button><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="job-opening">
+        <div class="container" id="all-card">
+            <h2>current job openings</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3>PHYSIOTHERAPIST</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>GRAPHICS DESIGNER</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>CONTENT WRITER</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>CONTENT WRITER</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>CONTENT WRITER</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>CONTENT WRITER</h3>
+                    <p>Jaipur, Rajasthan <button><a href="#">Apply</a></button></p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" id="loadMore">Load More</a>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container" id="book-button">
-            <button><a href="#">Book Online</a></button>
+    </div>
+
+    <div class="we-care">
+        <div class="container">
+            <h2>We Care for our staffs</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="./images/Carrer/carrer2-01.svg" alt="">
+                    <div class="text">
+                        <span>Training and <br> certification</span>
+
+                        <small>We organisze regular training
+                            programs for all resources
+                            and maintain a high level of
+                            staff performance.</small>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./images/Carrer/carrer3-01.svg" alt="">
+                    <div class="text">
+                        <span>HYGIENE STANDARD</span>
+
+                        <small>We ensure that all our
+                            staffs get their Occupational
+                            health card. For safety of
+                            all of us.</small>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./images/Carrer/carrer4-01.svg" alt="">
+                    <div class="text">
+                        <span>health and life insurence</span>
+
+                        <small>We offer health and life insurence to all our resources to support and protect our
+                            team member.</small>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
-                    <p><a href="about.html">About</a></p>
+                    <p><a href="about">About Us</a></p>
                     <!-- <p><a href="#">Blog</a></p> -->
-                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="contact">Contact</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Services</h3>
                     <!-- <p><a href="#">Location</a></p>
-                    <p><a href="#">Resource</a></p> -->
+                        <p><a href="#">Resource</a></p> -->
                     <p><a href="#">FAQ</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>For Physiotherapist</h3>
-                    <p><a href="careers.html">Careers</a></p>
+                    <p><a href="careers">Careers</a></p>
                     <!-- <p><a href="#">Doctors Resorces</a></p> -->
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
@@ -837,7 +890,7 @@
                                         Company, our customers, or others, or in the event of a claim or dispute
                                         relating to your use of our Services. This includes exchanging information with
                                         other companies and organizations for the purposes of fraud detection and credit
-                                        risk reduction. We may share information for Internal Use or may share it with
+                                        risk reduction. We may share information for Internal Use or may share it with
                                         any successor to all or part of our business:
                                         <br><br>
                                         For example, if part of our business is sold we may give our customer list as
@@ -871,9 +924,9 @@
                                         apps, online media and advertisements. We use cookies and similar technologies
                                         for purposes such as:
                                         <br><br>
-                                        Authenticating users; Remembering user preferences and settings; Determining the
+                                        Authenticating users; Remembering user preferences and settings; Determining the
                                         popularity of content; Delivering and measuring the effectiveness of advertising
-                                        campaigns; Analyzing site traffic and trends, and generally understanding the
+                                        campaigns; Analyzing site traffic and trends, and generally understanding the
                                         online behaviors and interests of people who interact with our services.
                                         <br><br>
                                         A pixel tag (also called a web beacon or clear GIF) is a tiny graphic with a
@@ -990,7 +1043,9 @@
         </div>
     </div>
 
+
     <a id="button"></a>
+
 
     <!-- jQuery CND Links -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

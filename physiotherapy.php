@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - RightPhyio</title>
+    <title>Physiotherapy - RightPhysio</title>
+
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,54 +15,12 @@
     <!-- Google Fonts CND Links -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/contact.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <style>
-        .error {
-            position: relative;
-            animation: shake .1s linear;
-            animation-iteration-count: 3;
-            border: 1px solid red;
-        }
-
-        @keyframes shake {
-            0% {
-                left: -5px;
-            }
-
-            100% {
-                right: -5px;
-            }
-        }
-
-        .social-icons .col-sm-12 .fa {
-            color: #009345;
-            font-size: 30px;
-        }
-
-        .social-icons .col-sm-12 p {
-            text-align: center;
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-        }
-
-        .social-icons .col-sm-12 a {
-            color: #181818;
-            font-size: 18px;
-            text-align: center;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/phyaiotherapy.css">
 </head>
 
 <body>
     <div class="bg-img" id="bg-img">
-        <!-- Phone Number & Book Button Above Navbar Starts From Here -->
         <div class="phone_book_button">
             <div class="col-sm-8"></div>
             <div class="col-sm-4 phone_book">
@@ -69,27 +28,25 @@
                         9076319176</a><span><button>Book Online</button></span></p> -->
             </div>
         </div>
-        <!-- Phone Number & Book Button Above Navbar Ends Here -->
 
-        <!-- Navigatiob Bar Code Starts From Here -->
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
                 <div class="nav-container">
                     <div class="brand">
-                        <a href="index.html"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
                         <ul class="nav-list">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="nav-dropdown" style="margin-top: 0 !important;">
                                     <li>
-                                        <a href="physiotherapy.html" target="_blank">
+                                        <a href="physiotherapy" target="_blank">
                                             Physiotherapy</a>
                                     </li>
                                     <!-- <li>
@@ -118,7 +75,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="about">About Us</a>
                             </li>
                             <!-- <li>
                                     <a href="#!">Solutions</a>
@@ -126,9 +83,9 @@
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact">Contact</a></li>
                             <li>
-                                <a href="careers.html">Careers</a>
+                                <a href="careers">Careers</a>
                             </li>
                         </ul>
                     </nav>
@@ -137,87 +94,129 @@
         </div>
         <!-- </div> -->
     </div>
-    <div class="contact">
-        <div class="container">
-            <div class="row">
-                <div style="margin-top: 50px;" class="col-sm-6 social-icons">
-                    <h1 style="text-align: center;">Contact Information</h1>
-                    <div class="col-sm-12" style="text-align: center;">
-                        <p>
-                            <i style="text-align: center;" class="fa fa-home" aria-hidden="true"></i> <br>
-                            Mnit Innovation And Incubation Center <br> Naya Bass, Jhalana Gram, Malviya
-                            Nagar,
-                            <br> Jaipur,
-                            Rajasthan 302017
-                        </p>
-                    </div>
 
-                    <div class="col-sm-12" style="text-align: center;">
-                        <p>
-                            <i style="text-align: center;" class="fa fa-phone-square" aria-hidden="true"></i> <br>
-                            <span><a href="tel:+91 9076319176"> 9076319176</a></span>
-                        </p>
-                    </div>
-                    <div class="col-sm-12" style="text-align: center;">
-                        <p>
-                            <i class="fa fa-envelope" aria-hidden="true"></i><br>
-                            <Span><a href="mailto:info@rightphysio.com">
-                                    info@rightphysio.com</a></Span>
-                        </p>
-                    </div>
-                    <div style="text-align: center; font-family: 'Roboto', sans-serif; font-weight: 700;">
-                        <a href="https://www.facebook.com/rightphysio/" class="fb"><i class="fa fa-facebook faa-ring animated fa-4x'"
-                                aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/rightphysio/" class="insta"><i class="fa fa-instagram faa-ring animated fa-4x'" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/company/7151614/" class="linkd"><i class="fa fa-linkedin faa-ring animated fa-4x'" aria-hidden="true"></i></a>
-                        <p>We are on Social Network</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 input-form">
-                    <h3>Get In Touch</h3>
-                    <p>Fell Free To Drop Us A Line.</p>
-                    <form action="#">
-                        <fieldset>
-                            <span id="nameError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="text" id="name" placeholder="Enter Your Full Name" required>
-                            <span><i class="fa fa-user" id="user"></i></span>
-                        </fieldset>
-                        <fieldset>
-                            <span id="emailError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="text" id="email" placeholder="Your Email" required>
-                            <span><i class="fa fa-envelope" id="envelope" aria-hidden="true"></i></span>
-                        </fieldset>
-                        <fieldset>
-                            <span id="phoneError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
-                            <span><i class="fa fa-phone-square" id="square" aria-hidden="true"></i></span>
-                        </fieldset>
-                        <fieldset>
-                            <span id="cityError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="text" id="loc" placeholder="Enter Your City" required>
-                            <span><i class="fa fa-map-marker" id="marker" aria-hidden="true"></i></span>
-                        </fieldset>
-                        <fieldset>
-                            <textarea id="msg" cols="30" rows="10" placeholder="Enter your Message here"></textarea>
-                        </fieldset>
-                        <fieldset id="submit">
-                            <a href="#" onclick="myfun()">Send</a>
-                        </fieldset>
-                    </form>
-                </div>
+    <section id="content">
+        <h1 style="text-align: center; margin: 30px auto; font-family:'Poppins', sans-serif; font-weight: 900;" ,>
+            PHYSIOTHERAPY</h1>
+        <div class="container" id="content-text">
+            <p><b>Right Physio</b> provides quality of physiotherapy service in Jaipur city of Rajasthan
+                with compassion. We bring top most physiotherapy service into our patient’s homes
+                and aim to make physiotherapy service no only more accessible, but also more
+                affordable and accountable to our patient’s needs.</p>
+            <div class="QnA">
+                <h2>What is physiotherapy?</h2>
+                <p>Physiotherapy is a health care profession which focuses on decreasing pain along with
+                    assists people to restore, maintain and maximize their strength, function, movement, and
+                    overall well-being. It begins with a detailed assessment, which helps the physiotherapist and
+                    patient discuss options for a treatment plan. Physiotherapists have in depth knowledge of
+                    how the body works and specialized hands on clinical skills to assess, diagnose, and treat
+                    symptoms of illness, injury and disability. Physiotherapy includes rehabilitation, as well as
+                    prevention of injury, and promotion of health and fitness. Physiotherapists often work in
+                    teams with other health professionals to help meet an individuals health care needs. <br><br>
+                    <b>Physiotherapy can help you-</b>
+                    <ul>
+                        <li>To become stronger and more flexible</li>
+                        <li>To increase freedom of movement and mobility </li>
+                        <li>To breathe easier</li>
+                        <li>To reduce pain </li>
+                        <li>To stay active</li>
+                        <li>To prevent injury</li>
+                    </ul>
+                    So you can resume activities important to you.
+                </p>
+                <h2>Who can benefits from physiotherapy?</h2>
+                <p>All age group can get benefits from physiotherapy whether it’s a
+                    baby, a young professional in any stream, pregnant women or an
+                    elderly person. <br><br>
+                    If you have any of the below-given conditions, you can opt for
+                    physiotherapy for long-term benefits:<br><br>
+                    <ol>
+                        <li>
+                            For Baby developmental condition like cerebral palsy, autism
+                            condition, club foot etc.
+                        </li>
+                        <br><br>
+                        <li>
+                            A young professional in any stream either male or female get
+                            benefits from physiotherapy like in offices there is lots of back
+                            pain/cervical pain issues as per requirements of computer uses. Many
+                            sports young professional needs their personal physiotherapist to
+                            improve their strength, stamina and injury prevention/rehabilitation
+                            role.
+                        </li>
+                        <br><br>
+                        <li>
+                            For woman health there are many stages to get benefits from
+                            physiotherapy like during pregnancy, after pregnancy, menstruation
+                            changes like menopause and elderly conditions.
+                        </li>
+                        <br><br>
+                        <li>
+                            For elderly patient all systematic problems like cardio-respiratory
+                            conditions eg- Asthma, neurologic conditions eg- Parkinsonism, stroke
+                            and all age related musculoskeletal issues can be addressed with the
+                            help of physiotherapy.
+                        </li>
+                        <br><br>
+                        <li> All kind of palliative care patients can get benefits from
+                            physiotherapy like cancer patients, post surgery patients, disable
+                            patient’s eg- Amputation/ musculoskeletal malfunctioning etc.
+                        </li>
+                    </ol>
+                </p>
+                <br>
+                <h2> What kind of therapies does a Physiotherapist use?</h2>
+                <p>
+                    Mainly there a 3 types of Basic therapies used by physiotherapist-<br><br>
+                    <ol>
+                        <li>
+                            <b>Manual therapy -</b> which includes joint mobilization and manipulation by
+                            physiotherapist used in orthopedic conditions, chest physiotherapy techniques
+                            like chest percussion/ vibration used in cardio-respiratory conditions, Neurological
+                            manual therapy techniques like PNF therapy, NDT therapy. So these are the
+                            manual techniques used by physiotherapist.
+                        </li>
+                        <br><br>
+                        <li>
+                            <b>Exercises therapy -</b> In exercise therapy patient has to participate along with the
+                            physiotherapist so this therapy encourages active participation of the patient and
+                            improves patient’s well being condition physically and psychologically. There are
+                            numerous ways to perform exercises therapy at clinic as well as at patient’s home
+                            with the use of home based objects like strength exercises in the clinic with the
+                            uses of sand bags, dumbbells, therabands etc, and at patient’s home with the help
+                            of any heavy objects like home based sand bags. Same like strength exercise
+                            therapy there are various exercise protocol for improving range, improving
+                            endurance, improving flexibility, improving continence.
+                        </li>
+                        <br><br>
+                        <li>
+                            <b>Electrotherapy -</b> This kind of therapy more ever passive where there is not much
+                            involvement by the patient but patient has to alert while application of these
+                            electrotherapy modalities. Various types of electrotherapy modalities available in
+                            large scale like pain reducing modalities TENS/ IFT, healing based modalities like
+                            Ultrasound therapy/UVR/IRR, Spine condition based modalities like spinal traction,
+                            mobility based modalities like CPM/ WAX unit, Muscle and nerve condition based
+                            modality like electrical stimulator.
+                        </li>
+                    </ol>
+                </p>
             </div>
         </div>
-    </div>
-
+    </section>
+    <section>
+        <div class="container" id="book-button">
+            <button><a href="#">Book Online</a></button>
+        </div>
+    </section>
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
-                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="about">About</a></p>
                     <!-- <p><a href="#">Blog</a></p> -->
-                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="contact">Contact Us</a></p>
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Services</h3>
@@ -227,7 +226,7 @@
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>For Physiotherapist</h3>
-                    <p><a href="careers.html">Careers</a></p>
+                    <p><a href="careers">Careers</a></p>
                     <!-- <p><a href="#">Doctors Resorces</a></p> -->
                 </div>
                 <div class="col-sm-3" style="margin-top: 30px;">
@@ -838,7 +837,7 @@
                                         Company, our customers, or others, or in the event of a claim or dispute
                                         relating to your use of our Services. This includes exchanging information with
                                         other companies and organizations for the purposes of fraud detection and credit
-                                        risk reduction. We may share information for Internal Use or may share it with
+                                        risk reduction. We may share information for Internal Use or may share it with
                                         any successor to all or part of our business:
                                         <br><br>
                                         For example, if part of our business is sold we may give our customer list as
@@ -872,9 +871,9 @@
                                         apps, online media and advertisements. We use cookies and similar technologies
                                         for purposes such as:
                                         <br><br>
-                                        Authenticating users; Remembering user preferences and settings; Determining the
+                                        Authenticating users; Remembering user preferences and settings; Determining the
                                         popularity of content; Delivering and measuring the effectiveness of advertising
-                                        campaigns; Analyzing site traffic and trends, and generally understanding the
+                                        campaigns; Analyzing site traffic and trends, and generally understanding the
                                         online behaviors and interests of people who interact with our services.
                                         <br><br>
                                         A pixel tag (also called a web beacon or clear GIF) is a tiny graphic with a
@@ -991,9 +990,6 @@
         </div>
     </div>
 
-
-    <!-- Header Of Website Ends Here -->
-
     <a id="button"></a>
 
     <!-- jQuery CND Links -->
@@ -1005,18 +1001,24 @@
     </script>
     <!-- My Custom Script -->
     <script src="./js/script.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Force The Page To Load From Top
-            $(this).scrollTop(0);
-            AOS.init({
-                duration: 1500,
-                delay: 80
-            });
-            AOS.init({
-                disable: 'mobile',
-                disable: 'tablet',
-            });
+    <script src="./js/jquery.simpleLoadMore.min.js"></script>
+
+    <script type="text/javascript">
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
         });
     </script>
 </body>
