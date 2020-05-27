@@ -68,7 +68,7 @@ html {
 
 .brand {
   position: absolute;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   float: left;
   line-height: 70px;
   text-transform: uppercase;
@@ -217,7 +217,7 @@ nav ul li ul li a {
   text-transform: capitalize;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px !important;
   width: 100%;
   display: block;
   margin-left: auto;
@@ -230,7 +230,7 @@ nav ul li ul li a {
   font-weight: 400;
   font-family: 'Lato', san-serif;
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .single-about-detail {

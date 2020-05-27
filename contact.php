@@ -1,5 +1,8 @@
 <?php
   require_once('config.php');
+  require 'PHPMailer/src/Exception.php';
+  require 'PHPMailer/src/PHPMailer.php';
+  require 'PHPMailer/src/SMTP.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - RightPhyio</title>
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png"/ sizes="16x16">
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -20,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contact.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -79,9 +83,9 @@
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
-                <div class="nav-container">
+                <!-- <div class="nav-container"> -->
                     <div class="brand">
-                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo/logo-min.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
@@ -136,7 +140,7 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <!-- </div> -->
@@ -180,7 +184,40 @@
                 <div class="col-sm-6 input-form">
                     <h3>Get In Touch</h3>
                     <p>Fell Free To Drop Us A Line.</p>
-                    <form action="#">
+                        <?php
+                        	if(isset($_POST['name'])&&isset($_POST['emailaddress'])&&isset($_POST['phonenumber'])&&isset($_POST['city'])&&isset($_POST['message'])&&isset($_POST['submit'])) {
+                        		$name = $_POST['name'];
+                        		$email = $_POST['emailaddress'];
+                        		$phone = $_POST['phonenumber'];
+                        		$city = $_POST['city'];
+                        		$message = $_POST['message'];
+                        		if (!empty($_SERVER['HTTP_CLIENT_IP'])) { 
+                                    $addr =  $_SERVER['HTTP_CLIENT_IP']; 
+                                } 
+                                else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) { 
+                                    $addr =  $_SERVER['HTTP_X_FORWARDED_FOR']; 
+                                } 
+                                else { 
+                                    $addr =  $_SERVER['REMOTE_ADDR']; 
+                                }
+                        		
+                        		$sql = "INSERT INTO tblcontactdata VALUES('','".$name."','".$phone."','".$email."','".$city."','".$message."','".$addr."',NOW(),'0')";
+                        		$sql_run = mysqli_query($link, $sql);
+                        		if($sql_run) {
+                                    $headers = "From: support@rightphysio.com";
+                                    
+                                    if(mail($email, "Thank you for your interest in RightPhysio", $message, $headers)) {
+                                        $result = "Your Message Has Been Sent. Thank You";
+                                        // echo 'Message has been sent';
+                                    } else {
+                                        echo "Message could not be sent.";
+                                    }
+                        		} else {
+                        			echo 'Fail';
+                        		}
+                        	}
+                        ?>
+                    <form action="contact.php" method="POST">
                         <fieldset>
                             <span id="nameError" class="text-danger" style="font-weight: bold"></span>
                             <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
@@ -188,12 +225,12 @@
                         </fieldset>
                         <fieldset>
                             <span id="emailError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="text" name='emailaddress' id="email" placeholder="Your Email" required>
+                            <input type="email" name='emailaddress' id="email" placeholder="Your Email" required>
                             <span><i class="fa fa-envelope" id="envelope" aria-hidden="true"></i></span>
                         </fieldset>
                         <fieldset>
                             <span id="phoneError" class="text-danger" style="font-weight: bold"></span>
-                            <input type="tel" name='phonenumber'  id="phone" placeholder="Enter Your Phone Number" required>
+                            <input type="tel" name='phonenumber'  id="phone" maxlength='10' placeholder="Enter Your Phone Number" required>
                             <span><i class="fa fa-phone-square" id="square" aria-hidden="true"></i></span>
                         </fieldset>
                         <fieldset>
@@ -205,8 +242,9 @@
                             <textarea name='message' id="msg" cols="30" rows="10" placeholder="Enter your Message here"></textarea>
                         </fieldset>
                         <fieldset id="submit">
-                            <a href="#" onclick="myfun()">Send</a>
+                            <a><button type="submit" onclick="myfun()" style="background-color: #009345;color: white;border: none;" name="submit">Send</button></a>
                         </fieldset>
+                        <p style="color: #009345"><?php echo $result ; ?></p>
                     </form>
                 </div>
             </div>
@@ -1000,6 +1038,7 @@
 
     <a id="button"></a>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- jQuery CND Links -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -1008,7 +1047,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- My Custom Script -->
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
     <script>
         $(document).ready(function () {
             // Force The Page To Load From Top

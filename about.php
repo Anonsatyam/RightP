@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - RightPhyio</title>
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png"/ sizes="16x16">
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -37,24 +38,24 @@
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
-                <div class="nav-container">
-                    <div class="brand">
-                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
-                    </div>
-                    <nav>
-                        <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
-                        <ul class="nav-list">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                                <ul class="nav-dropdown" style="margin-top: 0 !important;">
-                                    <li>
-                                        <a href="physiotherapy" target="_blank">
-                                            Physiotherapy</a>
-                                    </li>
-                                    <!-- <li>
+                <!-- <div class="nav-container"> -->
+                <div class="brand">
+                    <a href="/"><img src="./images/logo/logo-min.png" width="200px" alt=""></a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul class="nav-dropdown" style="margin-top: 0 !important;">
+                                <li>
+                                    <a href="physiotherapy" target="_blank">
+                                        Physiotherapy</a>
+                                </li>
+                                <!-- <li>
                                             <a href="page2.html"> Service 2</a>
                                         </li>
                                         <li>
@@ -77,24 +78,24 @@
                                             <a href="page7.html">
                                                 Service 7</a>
                                         </li> -->
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="about">About Us</a>
-                            </li>
-                            <!-- <li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about">About Us</a>
+                        </li>
+                        <!-- <li>
                                     <a href="#!">Solutions</a>
                                 </li>
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact">Contact</a></li>
-                            <li>
-                                <a href="careers">Careers</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                        <li><a href="contact">Contact</a></li>
+                        <li>
+                            <a href="careers">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- </div> -->
             </div>
         </div>
         <!-- </div> -->
@@ -157,15 +158,17 @@
             <div class="row">
 
                 <h1 data-aos="zoom-in-down">Our Vision</h1>
-                <p data-aos="zoom-in-down" style="color: #3a3a3a; text-align: center;">Our mission is to permit best
-                    medical services to every individual, as
-                    well as allowing every Physiotherapist to register his presence. We strive to achieve our
-                    mission</p>
+                <div class="container" style="max-width: 900px">
+                    <p data-aos="zoom-in-down" style="color: #3a3a3a; text-align: center;">Our mission is to permit best
+                        medical services to every individual, as
+                        well as allowing every Physiotherapist to register his presence. We strive to achieve our
+                        mission</p>
+                </div>
 
                 <div class="col-md-4 col-sm-6 text-center" data-aos="zoom-in-down">
                     <div class="single-about-detail clearfix">
                         <div class="about-img">
-                            <img class="img-responsive" src="./images/About_Us/item1.jpg" alt="">
+                            <img class="img-responsive" src="./images/About_Us/item1.jpg" height="250px" alt="">
                         </div>
                         <div class="about-details">
                             <div class="pentagon-text">
@@ -180,7 +183,7 @@
                 <div class="col-md-4 col-sm-6 text-center" data-aos="zoom-in-down">
                     <div class="single-about-detail">
                         <div class="about-img">
-                            <img class="img-responsive" src="./images/About_Us/item2.jpg" alt="">
+                            <img class="img-responsive" src="./images/About_Us/item2.jpg" height="250px" alt="">
                         </div>
                         <div class="about-details">
                             <div class="pentagon-text">
@@ -196,7 +199,7 @@
                 <div class="col-md-4 col-sm-6 text-center" data-aos="zoom-in-down">
                     <div class="single-about-detail">
                         <div class="about-img">
-                            <img class="img-responsive" src="./images/About_Us/item3.jpg" alt="">
+                            <img class="img-responsive" src="./images/About_Us/item3.jpg" height="250px" alt="">
                         </div>
                         <div class="about-details">
                             <div class="pentagon-text">
@@ -1007,37 +1010,37 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- My Custom Script -->
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
     <script>
-        $(document).ready(function () {
-            // Force The Page To Load From Top
-            $(this).scrollTop(0);
-            AOS.init({
-                duration: 1500,
-                delay: 80
-            });
-            AOS.init({
-                disable: 'mobile',
-                disable: 'tablet',
-            });
+    $(document).ready(function() {
+        // Force The Page To Load From Top
+        $(this).scrollTop(0);
+        AOS.init({
+            duration: 1500,
+            delay: 80
         });
-
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
+        AOS.init({
+            disable: 'mobile',
+            disable: 'tablet',
         });
+    });
 
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, '300');
-        });
+    var btn = $('#button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
+    });
     </script>
 </body>
 

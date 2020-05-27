@@ -1,13 +1,14 @@
 // Form Validation Using RegeX
 function myfun() {
 
+
     var name = document.getElementById("name");
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     var loc = document.getElementById("loc");
 
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    var phonePattern = /^[6-9]\d{9}$/
+    var phonePattern = /^[6-9]\d{9}$/;
 
     // Name
     if (name.value == "" || name.value == null) {
@@ -68,6 +69,12 @@ function myfun() {
         document.getElementById("loc").style.border = "1px solid #009345"
         document.getElementById("marker").style.color = "#009345"
     }
+    
+    // swal({
+    //     title: "Alert",
+    //     text: "This Website Is Under Construction!",
+    //     icon: 'info',
+    // });
 };
 
 

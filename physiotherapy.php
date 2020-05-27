@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physiotherapy - RightPhysio</title>
-
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png"/ sizes="16x16">
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/phyaiotherapy.css">
+    <link rel="stylesheet" href="css/physiotherapy.min.css">
 </head>
 
 <body>
@@ -32,9 +32,9 @@
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
-                <div class="nav-container">
+                <!-- <div class="nav-container"> -->
                     <div class="brand">
-                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
+                        <a href="/"><img src="./images/logo/logo-min.png" width="200px" alt=""></a>
                     </div>
                     <nav>
                         <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
@@ -89,7 +89,7 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <!-- </div> -->
@@ -205,7 +205,7 @@
     </section>
     <section>
         <div class="container" id="book-button">
-            <button><a href="#">Book Online</a></button>
+            <button><a href="/">Book Online</a></button>
         </div>
     </section>
     <!-- Footer Code Starts From Here -->
@@ -1000,8 +1000,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- My Custom Script -->
-    <script src="./js/script.js"></script>
-    <script src="./js/jquery.simpleLoadMore.min.js"></script>
+    <script src="./js/script.min.js"></script>
 
     <script type="text/javascript">
         var btn = $('#button');

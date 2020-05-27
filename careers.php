@@ -1,3 +1,10 @@
+<?php
+  require_once('config.php');
+  require 'PHPMailer/src/Exception.php';
+  require 'PHPMailer/src/PHPMailer.php';
+  require 'PHPMailer/src/SMTP.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - RightPhysio</title>
-
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png"/ sizes="16x16">
     <!-- Bootstrap CND Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
-    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="css/careers.min.css">
 </head>
 
 <body>
@@ -32,24 +39,24 @@
         <!-- <div class="container"> -->
         <div class="navigation">
             <div class="container">
-                <div class="nav-container">
-                    <div class="brand">
-                        <a href="/"><img src="./images/logo//logo1.png" width="200px" alt=""></a>
-                    </div>
-                    <nav>
-                        <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
-                        <ul class="nav-list">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                                <ul class="nav-dropdown" style="margin-top: 0 !important;">
-                                    <li>
-                                        <a href="physiotherapy" target="_blank">
-                                            Physiotherapy</a>
-                                    </li>
-                                    <!-- <li>
+                <!-- <div class="nav-container"> -->
+                <div class="brand">
+                    <a href="/"><img src="./images/logo/logo-min.png" width="200px" alt=""></a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul class="nav-dropdown" style="margin-top: 0 !important;">
+                                <li>
+                                    <a href="physiotherapy" target="_blank">
+                                        Physiotherapy</a>
+                                </li>
+                                <!-- <li>
                                             <a href="page2.html"> Service 2</a>
                                         </li>
                                         <li>
@@ -72,25 +79,25 @@
                                             <a href="page7.html">
                                                 Service 7</a>
                                         </li> -->
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="about">About Us</a>
-                            </li>
-                            <!-- <li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about">About Us</a>
+                        </li>
+                        <!-- <li>
                                     <a href="#!">Solutions</a>
                                 </li>
                                 <li>
                                     <a href="#!">Blog</a>
                                 </li> -->
-                            <li><a href="contact">Contact</a></li>
-                            <li>
-                                <a href="careers">Careers</a>
-                            </li>
+                        <li><a href="contact">Contact</a></li>
+                        <li>
+                            <a href="careers">Careers</a>
+                        </li>
 
-                        </ul>
-                    </nav>
-                </div>
+                    </ul>
+                </nav>
+                <!-- </div> -->
             </div>
         </div>
         <!-- </div> -->
@@ -100,8 +107,32 @@
     </div>
     <div class="container" id="apply-form">
         <div class="form-container">
-            <form id="contact" action="" method="post">
+            <?php
+                if(isset($_POST['fname'])&&isset($_POST['lname'])&&isset($_POST['email'])&&isset($_POST['phone'])&&isset($_POST['city'])&&isset($_POST['position'])&&isset($_POST['submit']))
+                {
+                    $fname = $_POST['fname'];
+                    $lname = $_POST['lname'];
+                    $email = $_POST['email'];
+                    $phone = $_POST['phone'];
+                    $city = $_POST['city'];
+                    $position = $_POST['position'];
+                    $file_path=$_FILES['file']['tmp_name'];
+                    $file_type=$_FILES['file']['type'];
+                    $file_size=$_FILES['file']['size'];
+                    $file_name=$_FILES['file']['name'];
+                    $data=mysqli_real_escape_string($link, file_get_contents($file_path));
+                    $sql ="INSERT INTO careerdata VALUES('','".$fname."','".$lname."','".$email."','".$phone."','".$city."','".$position."','".$data."',NOW())";
+                    $sql_run = mysqli_query($link, $sql);
+                    if($sql_run){
+                        $success =  'Your Form Has Been Submitted Successfully';
+                    } else {
+                        echo 'Not Saved'.mysqli_error($link);
+                    }
+                }
+            ?>
+            <form id="contact" action="careers.php" method="post" enctype="multipart/form-data">
                 <h2 style="text-align: left; margin-left: 1.2rem">Apply For Job</h2>
+                <h3 style="color: #009345"><?php echo $success ; ?></h3>
                 <hr>
                 <div class="form-group">
                     <div class="row">
@@ -135,7 +166,7 @@
                             <div class="input-group">
                                 <label for="email">Phone <span>*</span></label>
                                 <input type="tel" name="phone" required
-                                    data-validation-required-message="Please enter your phone number">
+                                    data-validation-required-message="Please enter your phone number" maxlength='10'>
                             </div>
                         </div>
                     </div>
@@ -145,30 +176,31 @@
                         <div class="col sm-6">
                             <div class="input-group">
                                 <label for="email">Address <span>*</span></label>
-                                <input type="text" name="address" required
+                                <input type="text" name="city" required
                                     data-validation-required-message="Please enter your Address">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group">
-                                <label for="email">Upload Your CV <span>*</span></label>
-                                <input type="file" name="file" required>
+                                <label for="position">For What Position You Are Applying For <span>*</span></label>
+                                <input type="text" name="position" required
+                                    data-validation-required-message="Please enter your Preferred Position">
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="input-group">
-                                <label for="email">For What Position You Are Applying For <span>*</span></label>
-                                <input type="text" name="text" required
-                                    data-validation-required-message="Please enter your Preferred Position">
+                                <label for="file">Upload Your CV <span>*</span></label>
+                                <input type="file" name="file" required>
                             </div>
                         </div>
                         <div class="col-sm-6" style="align-self: flex-end;">
                             <div class="input-group" id="get-job">
-                                <button><a href="#">Book Now</a></button>
+                                <button type="submit" name="submit" style="color: #fff !important;background-color: #009345 !important;">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -1048,33 +1080,34 @@
 
 
     <!-- jQuery CND Links -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script async src="./js/jquery.simpleLoadMore.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Bootstrap JS CND Link -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- My Custom Script -->
-    <script src="./js/script.js"></script>
-    <script src="./js/jquery.simpleLoadMore.min.js"></script>
+    <script src="./js/script.min.js"></script>
+    
 
     <script type="text/javascript">
-        var btn = $('#button');
+    var btn = $('#button');
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
 
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, '300');
-        });
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
+    });
     </script>
 </body>
 

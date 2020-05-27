@@ -68,7 +68,7 @@ html {
 
 .brand {
   position: absolute;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   float: left;
   line-height: 70px;
   text-transform: uppercase;
@@ -576,9 +576,8 @@ nav ul li ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 100px;
   }
 
   .phone_book p {
@@ -587,7 +586,6 @@ nav ul li ul li a {
 
   #head-info h1 {
     font-size: 34px;
-    margin-top: 220px;
   }
 
   #apply-form .form-container form {
@@ -611,7 +609,10 @@ nav ul li ul li a {
   #apply-form .form-container form #get-job {
     margin: 30px auto;
   }
-
+  #contact .row{
+    margin-right: auto;
+    margin-left: auto;
+    }
   #job-opening h2 {
     font-size: 22px;
   }
@@ -763,6 +764,10 @@ a#loadMore {
   width: 150px;
 }
 
+#modalRow .col-sm-4{
+  margin-bottom: 30px;
+}
+
 .modal.show .modal-dialog {
   max-width: 900px;
 }
@@ -777,6 +782,7 @@ a#loadMore {
   font-weight: 500;
   line-height: 1.8em;
   font-family: "Roboto", sans-serif;
+  text-align: left !important;
 }
 
 .modal-body h6 {
