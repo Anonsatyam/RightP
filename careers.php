@@ -9,6 +9,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167986788-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167986788-1');
+    </script>
+    <!--  END Global site tag (gtag.js) - Google Analytics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - RightPhysio</title>
@@ -24,6 +34,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
     <link rel="stylesheet" href="css/careers.min.css">
+    <style>
+        #foot-row{
+            padding-left: 60px;
+        }
+        @media only screen and (max-width : 800px) {
+            #foot-row{
+                padding-left: 0 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -166,7 +186,7 @@
                             <div class="input-group">
                                 <label for="email">Phone <span>*</span></label>
                                 <input type="tel" name="phone" required
-                                    data-validation-required-message="Please enter your phone number" maxlength='10'>
+                                    data-validation-required-message="Please enter your phone number" minlenght='10' maxlength='10'>
                             </div>
                         </div>
                     </div>
@@ -182,7 +202,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group">
-                                <label for="position">For What Position You Are Applying For <span>*</span></label>
+                                <label for="position">What Position You Are Applying<span>*</span></label>
                                 <input type="text" name="position" required
                                     data-validation-required-message="Please enter your Preferred Position">
                             </div>
@@ -200,7 +220,7 @@
                         </div>
                         <div class="col-sm-6" style="align-self: flex-end;">
                             <div class="input-group" id="get-job">
-                                <button type="submit" name="submit" style="color: #fff !important;background-color: #009345 !important;">Book Now</button>
+                                <button type="submit" name="submit" style="color: #fff !important;background-color: #009345 !important;">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -296,7 +316,7 @@
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="foot-row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
                     <p><a href="about">About Us</a></p>

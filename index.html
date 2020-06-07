@@ -2,6 +2,29 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167986788-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167986788-1');
+    </script>
+    <!--  END Global site tag (gtag.js) - Google Analytics -->
+    
+    <!--Zoho CRM Tracking Code Start-->
+    <script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var 
+    f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; 
+    if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;
+    try{loadwaprops("2573bc7da3e92eab5b35d95aa69958c40","2d2b3b0e91bb7f57e26b39d4b605b1b4f","264323a4262f4d8cffeb97aedb9d9407bcbad3f9c5f6454d4",
+    "26a975ebfb32727adb91b6af57c75778c","0.0");}catch(e){}}};}else {s.onload = function(){try{loadwaprops("2573bc7da3e92eab5b35d95aa69958c40",
+    "2d2b3b0e91bb7f57e26b39d4b605b1b4f","264323a4262f4d8cffeb97aedb9d9407bcbad3f9c5f6454d4","26a975ebfb32727adb91b6af57c75778c","0.0");}catch(e){}};};
+    s.src =p+"//marketinghub.zoho.in/hub/js/WebsiteAutomation.js";f.parentNode.insertBefore(s, f);</script>
+    
+    <!--Zoho CRM Tracking Code END-->
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RightPhysio - Physiotherapy Experts</title>
@@ -18,8 +41,8 @@
     <!-- Custom Css Code -->
     <link rel="stylesheet" href="css/style.min.css">
     <!-- Animation On Scrolling CND Links -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" async>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script defer src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
     <link async href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet'>
@@ -70,27 +93,68 @@
         margin-bottom: 20px;
         height:35px;
     }
+    #foot-row{
+        padding-left: 60px;
+    }
+    @media only screen and (max-width : 800px) {
+            #foot-row{
+                padding-left: 0 !important;
+            }
+            .footer .col-sm-4 p{
+                text-align:center;
+            }
+            #doc_img img{
+                margin-bottom: 55px;
+            }
+            #mr_doc h1{
+                margin-top:30px;
+                color: #000;
+            }
+            #mr_doc button{
+                margin-top: 0 !important;
+            }
+            .subscribe-form input{
+                font-weight: normal !important;
+            }
+        }
     </style>
+    
+    
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '185478256040117');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=185478256040117&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
 </head>
 
 <body>
-    <div class="container">
+<div class="container"> 
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-    
           <div class="popup-overlay"><!-- //оверлей - отображение формы на затемненном фоне -->
- 
-        <div class="popWindow subscribe_window"><!-- //основное окно формы Подписки -->
-          <p class="subcsribe-text">Are you working from home due to COVID-19?? <br>
+            <div class="popWindow subscribe_window"><!-- //основное окно формы Подписки -->
+                <p class="subcsribe-text">Are you working from home due to COVID-19?? <br>
                         Get on-call <b>free</b> consultancy for <br> your sitting and working posture.</p>
                     <form
                         action='https://forms.zohopublic.in/rightphysio/form/BookAppointment/formperma/v008SpMzUHHS-jyuesLjJOq7XT0QrVZU5KkHGey2ikI/htmlRecords/submit'
                         name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' style="margin-top: 20px" class="subscribe-form">
                         <input type="hidden" name="zf_referrer_name" value="">
-                        <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                         <!--To Track referrals , place the referrer name within the " " in the above hidden input field -->
                         <input type="hidden" name="zf_redirect_url" value="">
-                        <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                         <!--To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                         <input type="hidden" name="zc_gad" value="">
                         <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                         <!--Name-->
@@ -110,52 +174,14 @@
                             maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" placeholder="Your Mobile Number" />
                         <button id='formsubmit' type="submit">Get Call</button>
                     </form>
-          <!--<form class="subscribe-form" autocomplete="off">-->
-          <!--  <div>-->
-          <!--    <input type="text" id="name-subscribe" name="Name" placeholder=" " required>-->
-          <!--    <label for="name-subscribe">Name <span>*</span></label>-->
-          <!--  </div>-->
-          <!--  <div>-->
-          <!--    <input type="email" id="email-subscribe" name="E-mail" placeholder=" " required>-->
-          <!--    <label for="email-subscribe">Email <span>*</span></label>-->
-          <!--  </div>-->
-          <!--  <div class="aligncenter">-->
-          <!--    <button type="submit" class="btn"><i class="fa fa-check" aria-hidden="true"></i> Subscribe</button>-->
-          <!--  </div>-->
-          <!--  <div class="req-fields"><sup>*</sup> required fields</div>-->
-          <!--</form>-->
-          <div class="close-btn">&times;</div>
-        </div><!-- /subscribe_window -->
- 
-        <div class="popWindow thank_you_window"><!-- //благодарственное окно после успешной отправки формы -->
-          <p class="thank_you_title">Thank you for subscribing!</p>
-          <p class="thank_you_body">We've sent some useful tips to your email. Go ahead and check them now!</p>
-          <div class="close-btn">&times;</div>
-        </div><!-- /thank_you_window -->
-      </div>
+                <div class="close-btn">&times;</div>
+            </div><!-- /subscribe_window -->
+        </div>
       </div>
   </div>
-</div>
+</div> 
+
     
-    <!--<div id="myModal" class="modal fade" >-->
-    <!--    <div class="modal-dialog">-->
-    <!--        <div class="modal-content">-->
-    <!--            <div class="modal-header">-->
-                    
-    <!--            </div>-->
-    <!--            <div class="modal-body">-->
-				<!--    <p style="text-align:center;">Are you working from home due to COVID-19?? <br>-->
-    <!--                   Get on-call <b>FREE</b> consultancy for your sitting and working posture.</p>-->
-    <!--                <div class="container">-->
-    <!--                    <div class="row">-->
-    <!--                        <button data-dismiss="modal"><a href="#book">Book Online</a></button>-->
-    <!--                        <button type="submit" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">No Thanks</button>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
     <!-- Header Of Website Starts From Here -->
     <div class="bg-img" id="bg-img">
         <!-- Phone Number & Book Button Above Navbar Starts From Here -->
@@ -240,8 +266,7 @@
         <div class="container" id="mr_doc">
             <div class="row col-xs-12" style="margin-top: 100px;">
                 <div class="col-sm-6 main-info">
-                    <h1 class="anim1">Physiotherapy <br>
-                        Experts</h1>
+                    <h1 class="anim1">Physiotherapy Experts</h1>
                     <h4 class="anim1">Physiotherapy at your place </h4>
                     <div class="row main-button anim1" class="">
                         <!-- <div class="col-sm-3">
@@ -273,7 +298,7 @@
                 </div>
                 <div class="col-sm-6">
                     <p> Secure Online Payments, <br>
-                        Insurance Reimburseable Option.</p>
+                        Insurance Reimbursable Option.</p>
                 </div>
             </div>
         </div>
@@ -297,8 +322,8 @@
             <div class="col-sm-4 card" data-aos="zoom-in-down" data-aos-duration="500">
                 <img class="lazyload" data-src="./images/how-it-works/find-physio-min.png" alt="Card image cap" height="150" width="150">
                 <div class="card-body">
-                    <h3>We Will find a Physiotherapist match</h3>
-                    <p>After that first visit the diagnostician will select the therapist whose skills best
+                    <h3>We'll find a Physiotherapist match</h3>
+                    <p>After that first visit, the diagnostician will select the therapist whose skills best
                         match your requirements and any personal preferences you may have.
                         We may offer you a choice if we have more than one who we consider appropriate.</p>
                 </div>
@@ -332,20 +357,20 @@
                     <h3>Right Match</h3>
                     <p>Our physiotherapists have many different skills, many specialized. We will select the right one
                         for
-                        you individual problem.</p>
+                        your individual problem.</p>
                 </div>
                 <div class="col-sm-3" data-aos="fade-left"><img src="./images/why-choose/affordable-pricing.svg"
                         height="150" width="150" alt="">
                     <h3>Affordable Price</h3>
                     <p>We will give you a price for you to agree after the first diagnostic session.
-                        We will agree a payment plan to suit your pocket.
+                        We will agree on payment plan to suit your pocket.
 
                     </p>
                 </div>
                 <div class="col-sm-3" data-aos="fade-left"><img src="./images/why-choose/best-deal.svg" height="150"
                         width="150" alt="">
                     <h3>Best Deal</h3>
-                    <p>With you and the therapist we will monitor your progress through the treatment series.
+                    <p>With you and the therapist, we will monitor your progress through the treatment series.
                         This will help both you and ourselves to ensure you are making progress.</p>
                 </div>
             </div>
@@ -455,9 +480,9 @@
     </div>
     <!-- Our Services container code ends here -->
 
-    <!-- Book Appoinment container code starts from here -->
+    <!-- Book Appointment container code starts from here -->
     <div class="book-appoinment" id="book">
-        <h2 style="margin-top: 30px;">Book Appoinment</h2>
+        <h2 style="margin-top: 30px;">Book Appointment</h2>
         <div class="container">
             <div class="row">
                 <!-- Form Div Starts -->
@@ -501,12 +526,12 @@
             </div>
         </div>
     </div>
-    <!-- Book Appoinment container code ends here -->
+    <!-- Book Appointment container code ends here -->
 
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
-            <div class="row justify-content-md-center">
+            <div class="row" id="foot-row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
                     <p><a href="about">About Us</a></p>
@@ -1292,21 +1317,21 @@
     <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
 
     <!-- GSAP Text and Image Animation CND Link -->
-    <script async  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script async  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
 
     <!-- Popper.js CND Link is for positioning purpose -->
-    <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
 
     <!-- jQuery CND Links -->
     <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
-    <script async src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
-    <script async src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS CND Link -->
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     

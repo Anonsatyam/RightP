@@ -2,6 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167986788-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167986788-1');
+    </script>
+    <!--  END Global site tag (gtag.js) - Google Analytics -->
+    
+    <!--Zoho CRM Tracking Code Start-->
+    <script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var 
+    f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; 
+    if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;
+    try{loadwaprops("2573bc7da3e92eab5b35d95aa69958c40","2d2b3b0e91bb7f57e26b39d4b605b1b4f","264323a4262f4d8cffeb97aedb9d9407bcbad3f9c5f6454d4",
+    "26a975ebfb32727adb91b6af57c75778c","0.0");}catch(e){}}};}else {s.onload = function(){try{loadwaprops("2573bc7da3e92eab5b35d95aa69958c40",
+    "2d2b3b0e91bb7f57e26b39d4b605b1b4f","264323a4262f4d8cffeb97aedb9d9407bcbad3f9c5f6454d4","26a975ebfb32727adb91b6af57c75778c","0.0");}catch(e){}};};
+    s.src =p+"//marketinghub.zoho.in/hub/js/WebsiteAutomation.js";f.parentNode.insertBefore(s, f);</script>
+    
+    <!--Zoho CRM Tracking Code END-->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - RightPhyio</title>
@@ -20,6 +42,11 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        #foot-row{
+            padding-left: 60px;
+        }
+    </style>
 </head>
 
 <body>
@@ -110,13 +137,12 @@
                     <h2>Who We Are?</h2>
                     <br>
                     <p>Right physio provides quality of physiotherapy service in Jaipur city of Rajasthan with
-                        compassion. We bring top most physiotherapy service into our patient’s homes and aim
-                        to make physiotherapy service not only more accessible, but also more affordable
+                        compassion. We bring the topmost physiotherapy service into our patient’s homes and aim
+                        to make physiotherapy service not only more accessible but also more affordable
                         and accountable to our patient’s needs.
                         <br><br>
-                        Our vision is to dealing with patients with safety, quality and assurance with
-                        patient’s condition and makes the patient rehabilitate completely physically,
-                        socially and mentally. </p>
+                        Our vision is to deal with patients with safety, quality and assurance with the patient’s 
+                        condition and makes the patient rehabilitate completely physically, socially and mentally. </p>
                 </div>
                 <div class="col-sm-6" data-aos="fade-right">
                     <img src="./images/About_Us/about3-01.svg" alt="">
@@ -141,7 +167,7 @@
                         <br>
                         We provide physiotherapists for home visits who have selected based on their
                         practice backgrounds and medical knowledge. Right physio’s physiotherapy procedures
-                        were developed in consultation with senior physiotherapy professionals in the India,
+                        were developed in consultation with senior physiotherapy professionals in India,
                         ensuring that you receive only the highest quality physiotherapy care; all of our
                         physiotherapists are members of national medical accreditation bodies.
                         <br>
@@ -159,7 +185,7 @@
 
                 <h1 data-aos="zoom-in-down">Our Vision</h1>
                 <div class="container" style="max-width: 900px">
-                    <p data-aos="zoom-in-down" style="color: #3a3a3a; text-align: center;">Our mission is to permit best
+                    <p data-aos="zoom-in-down" style="color: #3a3a3a; text-align: center;">Our mission is to permit the best
                         medical services to every individual, as
                         well as allowing every Physiotherapist to register his presence. We strive to achieve our
                         mission</p>
@@ -218,7 +244,7 @@
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="foot-row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
                     <p><a href="about">About Us</a></p>
@@ -584,7 +610,7 @@
                                     <br>
                                     <p>
                                         <h6>INFORMATION WE COLLECT FROM YOU:</h6>
-                                        Contact information: We might collect your Name, Email, Phone, Address, IP
+                                        Contact information: We might collect your Name, Email, Phone, Address, IP
                                         Address.
                                         <br><br>
                                         Payment and billing information:
@@ -692,7 +718,7 @@
 
                                     <p>
                                         <h6>We collect information from you passively:</h6>We use tracking tools like
-                                        Google Cookies for collecting information about your usage of our website. We
+                                        Google Cookies for collecting information about your usage of our website. We
                                         get information about you from third parties: We may receive information about
                                         you from third parties, such as other users, partners (including ad partners,
                                         analytics providers, search information providers), or our affiliated companies
@@ -762,7 +788,7 @@
                                         measure or understand the effectiveness of advertising we serve to you and
                                         others, and to deliver relevant advertising to you.
                                         <br><br>
-                                        We use information to send you transactional communications: We might send you
+                                        We use information to send you transactional communications: We might send you
                                         emails or SMS about your account or purchase of our product.
                                         <br>
                                         <h6>We use information as otherwise permitted by law:</h6>
@@ -795,7 +821,7 @@
                                         analyze and improve the use of our Services, to process and collect payments.
                                         <br><br>
                                         We may also use vendors for other projects, such as conducting surveys or
-                                        organizing sweepstakes for us. Some vendors may be located outside of India. We
+                                        organizing sweepstakes for us. Some vendors may be located outside of India. We
                                         will share information with Advertisers and advertising networks:
                                         <br><br>
                                         We may work with third parties such as network advertisers to serve
@@ -816,7 +842,7 @@
                                         provide it. We will share information with our business partners:
                                         <br><br>
                                         This includes a third party who provide us various services. Our partners use
-                                        the information we give them as described in their privacy policies. While you
+                                        the information we give them as described in their privacy policies. While you
                                         place a request to order through the Parlak Healthcare Services Private Limited
                                         Platform, your information is provided to us and to the vendors with whom you
                                         may choose to order. In order to facilitate your online order processing, we
@@ -828,14 +854,14 @@
                                         <br><br>
                                         If you are a delivery partner, we may share your name, phone number and/or
                                         profile picture (if applicable), tracking details with other users to provide
-                                        them the Services. We may share information if we think we have to in order to
+                                        them the Services. We may share information if we think we have to in order to
                                         comply with the law or to protect ourselves:
                                         <br><br>
                                         We may also share it if a government agency or investigatory body or other
                                         companies assisting us, requests when we are:
                                         <br><br>
                                         Obligated under the applicable laws or in good faith to respond to court orders
-                                        and processes; or Detecting and preventing against actual or potential
+                                        and processes; or Detecting and preventing against actual or potential
                                         occurrence of identity theft, fraud, abuse of Services and other illegal acts;
                                         Responding to claims that an advertisement, posting or other content violates
                                         the intellectual property rights of a third party; Under a duty to disclose or
@@ -844,7 +870,7 @@
                                         Company, our customers, or others, or in the event of a claim or dispute
                                         relating to your use of our Services. This includes exchanging information with
                                         other companies and organizations for the purposes of fraud detection and credit
-                                        risk reduction. We may share information for Internal Use or may share it with
+                                        risk reduction. We may share information for Internal Use or may share it with
                                         any successor to all or part of our business:
                                         <br><br>
                                         For example, if part of our business is sold we may give our customer list as
@@ -852,7 +878,7 @@
                                         future member of our "Group" (as defined above) or affiliates for our internal
                                         business purposes
                                         <br><br>
-                                        We may share your information for reasons not described in this policy: We may
+                                        We may share your information for reasons not described in this policy: We may
                                         share your information other than as described in this Policy if we notify you
                                         and you consent to the sharing. We will tell you before we do this.
                                     </p>

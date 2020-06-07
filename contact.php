@@ -9,6 +9,17 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167986788-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167986788-1');
+    </script>
+    <!--  END Global site tag (gtag.js) - Google Analytics -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - RightPhyio</title>
@@ -63,6 +74,26 @@
             font-size: 18px;
             text-align: center;
             width: 100%;
+        }
+        #foot-row{
+            padding-left: 60px;
+        }
+        @media only screen and (max-width : 800px) {
+            #foot-row{
+                padding-left: 0 !important;
+            }
+            .footer .col-sm-4 p{
+                text-align:center;
+            }
+             .contact h1{
+                font-size: 34px !important;
+            }
+            .contact p{
+                font-size: 16px !important;
+            }
+            .footer .col-sm-8 p{
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -153,7 +184,7 @@
                     <div class="col-sm-12" style="text-align: center;">
                         <p>
                             <i style="text-align: center;" class="fa fa-home" aria-hidden="true"></i> <br>
-                            Mnit Innovation And Incubation Center <br> Naya Bass, Jhalana Gram, Malviya
+                            MNIT Innovation And Incubation Center <br> Naya Bass, Jhalana Gram, Malviya
                             Nagar,
                             <br> Jaipur,
                             Rajasthan 302017
@@ -254,7 +285,7 @@
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="foot-row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
                     <p><a href="about">About Us</a></p>

@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167986788-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167986788-1');
+    </script>
+    <!--  END Global site tag (gtag.js) - Google Analytics -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physiotherapy - RightPhysio</title>
@@ -17,6 +28,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <!-- Custom Css Code -->
     <link rel="stylesheet" href="css/physiotherapy.min.css">
+    <style>
+        #foot-row{
+            padding-left: 60px;
+        }
+        @media only screen and (max-width : 800px) {
+            #foot-row{
+                padding-left: 0 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -99,20 +120,22 @@
         <h1 style="text-align: center; margin: 30px auto; font-family:'Poppins', sans-serif; font-weight: 900;" ,>
             PHYSIOTHERAPY</h1>
         <div class="container" id="content-text">
-            <p><b>Right Physio</b> provides quality of physiotherapy service in Jaipur city of Rajasthan
-                with compassion. We bring top most physiotherapy service into our patient’s homes
+            <p><b>Right Physio</b> provides quality of physiotherapy service with compassion. 
+                We bring topmost physiotherapy service into our patient’s homes
                 and aim to make physiotherapy service no only more accessible, but also more
                 affordable and accountable to our patient’s needs.</p>
             <div class="QnA">
                 <h2>What is physiotherapy?</h2>
-                <p>Physiotherapy is a health care profession which focuses on decreasing pain along with
-                    assists people to restore, maintain and maximize their strength, function, movement, and
-                    overall well-being. It begins with a detailed assessment, which helps the physiotherapist and
-                    patient discuss options for a treatment plan. Physiotherapists have in depth knowledge of
-                    how the body works and specialized hands on clinical skills to assess, diagnose, and treat
-                    symptoms of illness, injury and disability. Physiotherapy includes rehabilitation, as well as
-                    prevention of injury, and promotion of health and fitness. Physiotherapists often work in
-                    teams with other health professionals to help meet an individuals health care needs. <br><br>
+                <p>Physiotherapy is a health care profession that focuses on decreasing pain 
+                along with assists people to restore, maintain, and maximize their strength, 
+                function, movement, and overall well-being. It begins with a detailed assessment, 
+                which helps the physiotherapist and patient discuss options for a treatment plan. 
+                Physiotherapists have in-depth knowledge of how the body works and specialized 
+                hands-on clinical skills to assess, diagnose, and treat symptoms of illness, 
+                injury, and disability. Physiotherapy includes rehabilitation, as well as 
+                prevention of injury, and promotion of health and fitness. Physiotherapists 
+                often work in teams with other health professionals to help meet an individual's 
+                health care needs.<br><br>
                     <b>Physiotherapy can help you-</b>
                     <ul>
                         <li>To become stronger and more flexible</li>
@@ -124,7 +147,7 @@
                     </ul>
                     So you can resume activities important to you.
                 </p>
-                <h2>Who can benefits from physiotherapy?</h2>
+                <h2>Who can benefit from physiotherapy?</h2>
                 <p>All age group can get benefits from physiotherapy whether it’s a
                     baby, a young professional in any stream, pregnant women or an
                     elderly person. <br><br>
@@ -167,7 +190,7 @@
                 <br>
                 <h2> What kind of therapies does a Physiotherapist use?</h2>
                 <p>
-                    Mainly there a 3 types of Basic therapies used by physiotherapist-<br><br>
+                    Mainly there a 3 types of Basic therapies used by a physiotherapist-<br><br>
                     <ol>
                         <li>
                             <b>Manual therapy -</b> which includes joint mobilization and manipulation by
@@ -178,25 +201,25 @@
                         </li>
                         <br><br>
                         <li>
-                            <b>Exercises therapy -</b> In exercise therapy patient has to participate along with the
-                            physiotherapist so this therapy encourages active participation of the patient and
-                            improves patient’s well being condition physically and psychologically. There are
-                            numerous ways to perform exercises therapy at clinic as well as at patient’s home
-                            with the use of home based objects like strength exercises in the clinic with the
-                            uses of sand bags, dumbbells, therabands etc, and at patient’s home with the help
-                            of any heavy objects like home based sand bags. Same like strength exercise
-                            therapy there are various exercise protocol for improving range, improving
-                            endurance, improving flexibility, improving continence.
+                            <b>Exercises therapy -</b> In exercise therapy, the patient has to participate along 
+                            with the physiotherapist so this therapy encourages the active participation of the 
+                            patient and improves the patient’s well-being condition physically and psychologically. 
+                            There are numerous ways to perform exercises therapy at the clinic as well as a patient’s 
+                            home with the use of home-based objects like strength exercises in the clinic with the 
+                            uses of sandbags, dumbbells, therabands, etc, and a patient’s home with the help of any 
+                            heavy objects like home-based sandbags. Same like strength exercise therapy there are 
+                            various exercise protocols for improving range, improving endurance, improving flexibility, 
+                            improving continence.
                         </li>
                         <br><br>
                         <li>
-                            <b>Electrotherapy -</b> This kind of therapy more ever passive where there is not much
-                            involvement by the patient but patient has to alert while application of these
-                            electrotherapy modalities. Various types of electrotherapy modalities available in
-                            large scale like pain reducing modalities TENS/ IFT, healing based modalities like
-                            Ultrasound therapy/UVR/IRR, Spine condition based modalities like spinal traction,
-                            mobility based modalities like CPM/ WAX unit, Muscle and nerve condition based
-                            modality like electrical stimulator.
+                            <b>Electrotherapy -</b> This kind of therapy more ever passive where there is not much 
+                            involvement by the patient but patient has to alert while application of these 
+                            electrotherapy modalities. Various types of electrotherapy modalities are available 
+                            in large scale like pain-reducing modalities TENS/ IFT, healing based modalities like 
+                            Ultrasound therapy/UVR/IRR, Spine condition-based modalities like spinal traction, 
+                            mobility-based modalities like CPM/ WAX unit, Muscle and nerve condition-based 
+                            modality like an electrical stimulator.
                         </li>
                     </ol>
                 </p>
@@ -211,7 +234,7 @@
     <!-- Footer Code Starts From Here -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="foot-row">
                 <div class="col-sm-3" style="margin-top: 30px;">
                     <h3>Company</h3>
                     <p><a href="about">About</a></p>
